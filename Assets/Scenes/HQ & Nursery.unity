@@ -366,7 +366,7 @@ GameObject:
   - component: {fileID: 1364418178}
   - component: {fileID: 1364418177}
   m_Layer: 0
-  m_Name: Cube
+  m_Name: Ref Dummy
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -517,7 +517,7 @@ Terrain:
   m_TreeBillboardDistance: 874
   m_TreeCrossFadeLength: 5
   m_TreeMaximumFullLODCount: 50
-  m_DetailObjectDistance: 80
+  m_DetailObjectDistance: 1000
   m_DetailObjectDensity: 1
   m_HeightmapPixelError: 5
   m_SplatMapDistance: 1000
