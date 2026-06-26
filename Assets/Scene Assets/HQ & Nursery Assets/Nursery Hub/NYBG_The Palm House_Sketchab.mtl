@@ -1,0 +1,53 @@
+newmtl TWS_Carpet_Faded_patchy_grey_green
+Ka 0.858823529411765 0.917647058823529 0.874509803921569
+Kd 0.858823529411765 0.917647058823529 0.874509803921569
+d 1
+map_Ka TWS_Carpet_Faded_patchy_grey_green.png
+map_Kd TWS_Carpet_Faded_patchy_grey_green.png
+newmtl TWS_Paint_White
+Ka 1 1 1
+Kd 1 1 1
+d 1
+newmtl TWS_Glass_Standard
+Ka 0.772549019607843 0.823529411764706 0.768627450980392
+Kd 0.772549019607843 0.823529411764706 0.768627450980392
+d 0.2
+newmtl TWS_Paint_Dark_Grey_Mottled
+Ka 0.0784313725490196 0.0784313725490196 0.0941176470588235
+Kd 0.0784313725490196 0.0784313725490196 0.0941176470588235
+d 1
+newmtl TWS_Stone_Marble_Black_w_white_vein
+Ka 0.313725490196078 0.313725490196078 0.313725490196078
+Kd 0.313725490196078 0.313725490196078 0.313725490196078
+d 1
+map_Ka TWS_Stone_Marble_Black_w_white_vein.jpg
+map_Kd TWS_Stone_Marble_Black_w_white_vein.jpg
+newmtl TWS_Paving_Light_Brown_Square
+Ka 0.313725490196078 0.313725490196078 0.313725490196078
+Kd 0.313725490196078 0.313725490196078 0.313725490196078
+d 1
+map_Ka 34_paving_outdoor_concrete_regular_block_texture-seamless_hr.jpg
+map_Kd 34_paving_outdoor_concrete_regular_block_texture-seamless_hr.jpg
+newmtl Water
+Ka 0.0392156862745098 0.286274509803922 0.666666666666667
+Kd 0.0392156862745098 0.286274509803922 0.666666666666667
+d 0.4
+newmtl TWS_Concrete_Light_Grey_Speckled
+Ka 0.313725490196078 0.313725490196078 0.313725490196078
+Kd 0.313725490196078 0.313725490196078 0.313725490196078
+d 1
+map_Ka TWS_Concrete_Light_Grey_Speckled.jpg
+map_Kd TWS_Concrete_Light_Grey_Speckled.jpg
+newmtl Grass
+Ka 1 1 1
+Kd 1 1 1
+d 1
+map_Ka Sitework.Planting.Grass.Thick.png
+map_Kd Sitework.Planting.Grass.Thick.png
+newmtl TWS_Metal_Old_textured_metal
+Ka 0.313725490196078 0.313725490196078 0.313725490196078
+Kd 0.313725490196078 0.313725490196078 0.313725490196078
+d 1
+map_Ka 48_old_dirty_metal_texture-seamless.jpg
+map_Kd 48_old_dirty_metal_texture-seamless.jpg
+
