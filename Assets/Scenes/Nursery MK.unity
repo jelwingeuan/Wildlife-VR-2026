@@ -1594,6 +1594,75 @@ Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: ce130d2f9e9444bc8bb0131f962204ea, type: 3}
   m_PrefabInstance: {fileID: 515015416}
   m_PrefabAsset: {fileID: 0}
+--- !u!1001 &517214715
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 335887917648742608, guid: a31fbdf2796bc2e429e25c0b06ab41b6, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.88804
+      objectReference: {fileID: 0}
+    - target: {fileID: 335887917648742608, guid: a31fbdf2796bc2e429e25c0b06ab41b6, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.88804
+      objectReference: {fileID: 0}
+    - target: {fileID: 335887917648742608, guid: a31fbdf2796bc2e429e25c0b06ab41b6, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 0.88804
+      objectReference: {fileID: 0}
+    - target: {fileID: 335887917648742608, guid: a31fbdf2796bc2e429e25c0b06ab41b6, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 411.15
+      objectReference: {fileID: 0}
+    - target: {fileID: 335887917648742608, guid: a31fbdf2796bc2e429e25c0b06ab41b6, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 13.262
+      objectReference: {fileID: 0}
+    - target: {fileID: 335887917648742608, guid: a31fbdf2796bc2e429e25c0b06ab41b6, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 179.69
+      objectReference: {fileID: 0}
+    - target: {fileID: 335887917648742608, guid: a31fbdf2796bc2e429e25c0b06ab41b6, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.958644
+      objectReference: {fileID: 0}
+    - target: {fileID: 335887917648742608, guid: a31fbdf2796bc2e429e25c0b06ab41b6, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 335887917648742608, guid: a31fbdf2796bc2e429e25c0b06ab41b6, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0.2846082
+      objectReference: {fileID: 0}
+    - target: {fileID: 335887917648742608, guid: a31fbdf2796bc2e429e25c0b06ab41b6, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 335887917648742608, guid: a31fbdf2796bc2e429e25c0b06ab41b6, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 335887917648742608, guid: a31fbdf2796bc2e429e25c0b06ab41b6, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: -33.071
+      objectReference: {fileID: 0}
+    - target: {fileID: 335887917648742608, guid: a31fbdf2796bc2e429e25c0b06ab41b6, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7846525704684660275, guid: a31fbdf2796bc2e429e25c0b06ab41b6, type: 3}
+      propertyPath: m_Name
+      value: Tropical Tree (3)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: a31fbdf2796bc2e429e25c0b06ab41b6, type: 3}
 --- !u!1001 &519670127
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3975,6 +4044,63 @@ Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: ce130d2f9e9444bc8bb0131f962204ea, type: 3}
   m_PrefabInstance: {fileID: 1217505493}
   m_PrefabAsset: {fileID: 0}
+--- !u!1001 &1311350500
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 335887917648742608, guid: a31fbdf2796bc2e429e25c0b06ab41b6, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 391
+      objectReference: {fileID: 0}
+    - target: {fileID: 335887917648742608, guid: a31fbdf2796bc2e429e25c0b06ab41b6, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 11.511658
+      objectReference: {fileID: 0}
+    - target: {fileID: 335887917648742608, guid: a31fbdf2796bc2e429e25c0b06ab41b6, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 244.9
+      objectReference: {fileID: 0}
+    - target: {fileID: 335887917648742608, guid: a31fbdf2796bc2e429e25c0b06ab41b6, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 335887917648742608, guid: a31fbdf2796bc2e429e25c0b06ab41b6, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 335887917648742608, guid: a31fbdf2796bc2e429e25c0b06ab41b6, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 335887917648742608, guid: a31fbdf2796bc2e429e25c0b06ab41b6, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 335887917648742608, guid: a31fbdf2796bc2e429e25c0b06ab41b6, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 335887917648742608, guid: a31fbdf2796bc2e429e25c0b06ab41b6, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 335887917648742608, guid: a31fbdf2796bc2e429e25c0b06ab41b6, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7846525704684660275, guid: a31fbdf2796bc2e429e25c0b06ab41b6, type: 3}
+      propertyPath: m_Name
+      value: Tropical Tree
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: a31fbdf2796bc2e429e25c0b06ab41b6, type: 3}
 --- !u!1001 &1311937475
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -5449,6 +5575,120 @@ Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: ce130d2f9e9444bc8bb0131f962204ea, type: 3}
   m_PrefabInstance: {fileID: 1777384458}
   m_PrefabAsset: {fileID: 0}
+--- !u!1001 &1812392421
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 335887917648742608, guid: a31fbdf2796bc2e429e25c0b06ab41b6, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 379.41046
+      objectReference: {fileID: 0}
+    - target: {fileID: 335887917648742608, guid: a31fbdf2796bc2e429e25c0b06ab41b6, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 11.511658
+      objectReference: {fileID: 0}
+    - target: {fileID: 335887917648742608, guid: a31fbdf2796bc2e429e25c0b06ab41b6, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 223.33119
+      objectReference: {fileID: 0}
+    - target: {fileID: 335887917648742608, guid: a31fbdf2796bc2e429e25c0b06ab41b6, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.958644
+      objectReference: {fileID: 0}
+    - target: {fileID: 335887917648742608, guid: a31fbdf2796bc2e429e25c0b06ab41b6, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 335887917648742608, guid: a31fbdf2796bc2e429e25c0b06ab41b6, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0.2846082
+      objectReference: {fileID: 0}
+    - target: {fileID: 335887917648742608, guid: a31fbdf2796bc2e429e25c0b06ab41b6, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 335887917648742608, guid: a31fbdf2796bc2e429e25c0b06ab41b6, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 335887917648742608, guid: a31fbdf2796bc2e429e25c0b06ab41b6, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: -33.071
+      objectReference: {fileID: 0}
+    - target: {fileID: 335887917648742608, guid: a31fbdf2796bc2e429e25c0b06ab41b6, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7846525704684660275, guid: a31fbdf2796bc2e429e25c0b06ab41b6, type: 3}
+      propertyPath: m_Name
+      value: Tropical Tree (1)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: a31fbdf2796bc2e429e25c0b06ab41b6, type: 3}
+--- !u!1001 &1822133523
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 335887917648742608, guid: a31fbdf2796bc2e429e25c0b06ab41b6, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 423.1
+      objectReference: {fileID: 0}
+    - target: {fileID: 335887917648742608, guid: a31fbdf2796bc2e429e25c0b06ab41b6, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 11.511658
+      objectReference: {fileID: 0}
+    - target: {fileID: 335887917648742608, guid: a31fbdf2796bc2e429e25c0b06ab41b6, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 232.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 335887917648742608, guid: a31fbdf2796bc2e429e25c0b06ab41b6, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.958644
+      objectReference: {fileID: 0}
+    - target: {fileID: 335887917648742608, guid: a31fbdf2796bc2e429e25c0b06ab41b6, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 335887917648742608, guid: a31fbdf2796bc2e429e25c0b06ab41b6, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0.2846082
+      objectReference: {fileID: 0}
+    - target: {fileID: 335887917648742608, guid: a31fbdf2796bc2e429e25c0b06ab41b6, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 335887917648742608, guid: a31fbdf2796bc2e429e25c0b06ab41b6, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 335887917648742608, guid: a31fbdf2796bc2e429e25c0b06ab41b6, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: -33.071
+      objectReference: {fileID: 0}
+    - target: {fileID: 335887917648742608, guid: a31fbdf2796bc2e429e25c0b06ab41b6, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7846525704684660275, guid: a31fbdf2796bc2e429e25c0b06ab41b6, type: 3}
+      propertyPath: m_Name
+      value: Tropical Tree (2)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: a31fbdf2796bc2e429e25c0b06ab41b6, type: 3}
 --- !u!1001 &1823859080
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -6250,3 +6490,7 @@ SceneRoots:
   - {fileID: 1050171866}
   - {fileID: 524309877}
   - {fileID: 310223255}
+  - {fileID: 1311350500}
+  - {fileID: 1812392421}
+  - {fileID: 1822133523}
+  - {fileID: 517214715}
