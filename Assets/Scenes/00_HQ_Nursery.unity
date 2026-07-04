@@ -477,7 +477,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: '::'
   triggerValue:
-    m_UseReference: 0
+    m_UseReference: 1
     m_Action:
       m_Name: Trigger Value
       m_Type: 0
@@ -487,9 +487,9 @@ MonoBehaviour:
       m_Interactions: 
       m_SingletonActionBindings: []
       m_Flags: 0
-    m_Reference: {fileID: 0}
+    m_Reference: {fileID: 7904272356298805229, guid: c348712bda248c246b8c49b3db54643f, type: 3}
   gripValue:
-    m_UseReference: 0
+    m_UseReference: 1
     m_Action:
       m_Name: Grip Value
       m_Type: 0
@@ -499,7 +499,7 @@ MonoBehaviour:
       m_Interactions: 
       m_SingletonActionBindings: []
       m_Flags: 0
-    m_Reference: {fileID: 0}
+    m_Reference: {fileID: -1758520528963094988, guid: c348712bda248c246b8c49b3db54643f, type: 3}
   handAnimator: {fileID: 479441054}
 --- !u!95 &479441054 stripped
 Animator:
@@ -1498,7 +1498,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: '::'
   triggerValue:
-    m_UseReference: 0
+    m_UseReference: 1
     m_Action:
       m_Name: Trigger Value
       m_Type: 0
@@ -1508,9 +1508,9 @@ MonoBehaviour:
       m_Interactions: 
       m_SingletonActionBindings: []
       m_Flags: 0
-    m_Reference: {fileID: 0}
+    m_Reference: {fileID: -4289430672226363583, guid: c348712bda248c246b8c49b3db54643f, type: 3}
   gripValue:
-    m_UseReference: 0
+    m_UseReference: 1
     m_Action:
       m_Name: Grip Value
       m_Type: 0
@@ -1520,7 +1520,7 @@ MonoBehaviour:
       m_Interactions: 
       m_SingletonActionBindings: []
       m_Flags: 0
-    m_Reference: {fileID: 0}
+    m_Reference: {fileID: 6558622148059887818, guid: c348712bda248c246b8c49b3db54643f, type: 3}
   handAnimator: {fileID: 942867519}
 --- !u!95 &942867519 stripped
 Animator:
