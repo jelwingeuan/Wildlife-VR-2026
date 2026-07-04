@@ -1,0 +1,17 @@
+fileFormatVersion: 2
+guid: ba6c777110986a94d8cb57fe82e897d8
+ScriptedImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 2
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+  script: {fileID: 11500000, guid: 625f186215c104763be7675aa2d941aa, type: 3}
+AssetOrigin:
+  serializedVersion: 1
+  productId: 299317
+  packageName: Ready Rain Forest Vol.1
+  packageVersion: 1.0
+  assetPath: Assets/Ready_Rain_Forest_Vol_1/Shader_URP/S_RRF_URP_Foliage.shadergraph
+  uploadId: 700443
