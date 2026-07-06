@@ -1,4 +1,4 @@
-using System.Collections;
+﻿using System.Collections;
 using UnityEngine;
 
 public class TreeTarget : MonoBehaviour
@@ -43,6 +43,9 @@ public class TreeTarget : MonoBehaviour
 
     void OnParticleCollision(GameObject other)
     {
+        // 🚨 DEBUG TOOL: This will print EXACTLY what is touching the green box!
+        Debug.Log("💥 SOMETHING HIT THE PLANTING ZONE: " + other.name);
+
         // Trigger the entire sequence ONLY when hit by the Seed Launcher
         if (other.name.Contains("Seed Stream") && !isPlanted)
         {
