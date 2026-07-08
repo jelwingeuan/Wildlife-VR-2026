@@ -9415,6 +9415,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 807871897}
+  - component: {fileID: 807871898}
   m_Layer: 0
   m_Name: Tapir Mission System V2
   m_TagString: Untagged
@@ -9440,6 +9441,43 @@ Transform:
   - {fileID: 1433301741}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &807871898
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 807871896}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c5733d19e3daef64da8bea3e564e7db9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::TapirMissionV2
+  state: 0
+  droneObject: {fileID: 1542425857}
+  droneStartPoint: {fileID: 1851893517}
+  droneScanPoint: {fileID: 1221837781}
+  droneFlySpeed: 3
+  tapirScanFX: {fileID: 1260237100}
+  scanFXDuration: 10
+  trunksNeeded: 3
+  lyingTapirModel: {fileID: 766289570}
+  walkingTapirModel: {fileID: 892004360}
+  tapirRoot: {fileID: 436072321}
+  walkingTapirAnimator: {fileID: 892004361}
+  walkStateName: Walk
+  idleStateName: Idle
+  tapirWalkTarget: {fileID: 1433301741}
+  tapirMoveSpeed: 1.2
+  tapirTurnSpeed: 5
+  stopDistance: 0.25
+  missionCompletePanel: {fileID: 0}
+  onMissionComplete:
+    m_PersistentCalls:
+      m_Calls: []
+  loadNextSceneDirectly: 0
+  nextSceneName: 
+  sceneLoadDelay: 2
 --- !u!1 &819677877
 GameObject:
   m_ObjectHideFlags: 0
@@ -15182,7 +15220,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 100012, guid: 856ddc11c4d1bd54885aa67f69f72cdf, type: 3}
       propertyPath: m_Name
-      value: TP_Tapir (1)
+      value: Scanner Effect
       objectReference: {fileID: 0}
     - target: {fileID: 400004, guid: 856ddc11c4d1bd54885aa67f69f72cdf, type: 3}
       propertyPath: m_ConstrainProportionsScale
@@ -15250,6 +15288,11 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 856ddc11c4d1bd54885aa67f69f72cdf, type: 3}
+--- !u!1 &1260237100 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 100012, guid: 856ddc11c4d1bd54885aa67f69f72cdf, type: 3}
+  m_PrefabInstance: {fileID: 1260237099}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1278293272
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -18341,7 +18384,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: -8679921383154817045, guid: bbe93a9b72e45ff45981722b13dbdb8c, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 13.392011
+      value: 8.98
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: bbe93a9b72e45ff45981722b13dbdb8c, type: 3}
       propertyPath: m_LocalPosition.y
@@ -18349,7 +18392,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: bbe93a9b72e45ff45981722b13dbdb8c, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 42.860344
+      value: 47.07
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: bbe93a9b72e45ff45981722b13dbdb8c, type: 3}
       propertyPath: m_LocalRotation.w
@@ -18390,8 +18433,157 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: bbe93a9b72e45ff45981722b13dbdb8c, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1542425860}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: bbe93a9b72e45ff45981722b13dbdb8c, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1542425859}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: bbe93a9b72e45ff45981722b13dbdb8c, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1542425858}
   m_SourcePrefab: {fileID: 100100000, guid: bbe93a9b72e45ff45981722b13dbdb8c, type: 3}
+--- !u!1 &1542425857 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: bbe93a9b72e45ff45981722b13dbdb8c, type: 3}
+  m_PrefabInstance: {fileID: 1542425856}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1542425858
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1542425857}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8a35f6cfbfba9b548aaa00d52cfe8a50, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Unity.XR.Interaction.Toolkit::UnityEngine.XR.Interaction.Toolkit.Interactables.XRSimpleInteractable
+  m_InteractionManager: {fileID: 2118445157}
+  m_Colliders:
+  - {fileID: 1542425860}
+  m_InteractionLayers:
+    m_Bits: 1
+  m_DistanceCalculationMode: 1
+  m_SelectMode: 0
+  m_FocusMode: 1
+  m_CustomReticle: {fileID: 0}
+  m_AllowGazeInteraction: 0
+  m_AllowGazeSelect: 0
+  m_OverrideGazeTimeToSelect: 0
+  m_GazeTimeToSelect: 0.5
+  m_OverrideTimeToAutoDeselectGaze: 0
+  m_TimeToAutoDeselectGaze: 3
+  m_AllowGazeAssistance: 0
+  m_FirstHoverEntered:
+    m_PersistentCalls:
+      m_Calls: []
+  m_LastHoverExited:
+    m_PersistentCalls:
+      m_Calls: []
+  m_HoverEntered:
+    m_PersistentCalls:
+      m_Calls: []
+  m_HoverExited:
+    m_PersistentCalls:
+      m_Calls: []
+  m_FirstSelectEntered:
+    m_PersistentCalls:
+      m_Calls: []
+  m_LastSelectExited:
+    m_PersistentCalls:
+      m_Calls: []
+  m_SelectEntered:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 807871898}
+        m_TargetAssemblyTypeName: TapirMissionV2, Assembly-CSharp
+        m_MethodName: StartDroneScan
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  m_SelectExited:
+    m_PersistentCalls:
+      m_Calls: []
+  m_FirstFocusEntered:
+    m_PersistentCalls:
+      m_Calls: []
+  m_LastFocusExited:
+    m_PersistentCalls:
+      m_Calls: []
+  m_FocusEntered:
+    m_PersistentCalls:
+      m_Calls: []
+  m_FocusExited:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Activated:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Deactivated:
+    m_PersistentCalls:
+      m_Calls: []
+  m_StartingHoverFilters: []
+  m_StartingSelectFilters: []
+  m_StartingInteractionStrengthFilters: []
+  m_AutoFindParentInteractableInHierarchy: 0
+  m_ParentInteractableObject: {fileID: 0}
+--- !u!54 &1542425859
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1542425857}
+  serializedVersion: 5
+  m_Mass: 1
+  m_LinearDamping: 0
+  m_AngularDamping: 0.05
+  m_CenterOfMass: {x: 0, y: 0, z: 0}
+  m_InertiaTensor: {x: 1, y: 1, z: 1}
+  m_InertiaRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ImplicitCom: 1
+  m_ImplicitTensor: 1
+  m_UseGravity: 0
+  m_IsKinematic: 1
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
+--- !u!65 &1542425860
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1542425857}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 0.01702756, y: 0.01899475, z: 0.00847892}
+  m_Center: {x: 0.000010190066, y: 0.000008884817, z: -0.0000007399358}
 --- !u!1001 &1549889515
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -30094,6 +30286,17 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8173b5c2d5c82416c954edc4d9a3e3be, type: 3}
+--- !u!114 &2118445157 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 8610169166479837048, guid: 8173b5c2d5c82416c954edc4d9a3e3be, type: 3}
+  m_PrefabInstance: {fileID: 2118445156}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 83e4e6cca11330d4088d729ab4fc9d9f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &2130086545
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -30267,15 +30470,15 @@ SceneRoots:
   - {fileID: 148327792}
   - {fileID: 53011299}
   - {fileID: 974309426}
+  - {fileID: 1999043963}
+  - {fileID: 753422837}
   - {fileID: 624876166}
   - {fileID: 146797358}
   - {fileID: 1657486608}
   - {fileID: 2118445156}
-  - {fileID: 436072321}
   - {fileID: 657042094}
   - {fileID: 726438128}
-  - {fileID: 1999043963}
-  - {fileID: 753422837}
+  - {fileID: 436072321}
   - {fileID: 1542425856}
   - {fileID: 8863762}
   - {fileID: 1260237099}
