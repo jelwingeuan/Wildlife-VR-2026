@@ -23,6 +23,7 @@ public class TapirMissionV2 : MonoBehaviour
     public Transform droneStartPoint;
     public Transform droneScanPoint;
     public float droneFlySpeed = 3f;
+    public bool lockDroneRotationToStartPoint = true;
 
     [Header("Scan FX")]
     public GameObject tapirScanFX;
@@ -87,7 +88,7 @@ public class TapirMissionV2 : MonoBehaviour
         if (missionCompletePanel != null)
             missionCompletePanel.SetActive(false);
 
-        Debug.Log("[Tapir Mission V2] Touch the drone to start scan.");
+        Debug.Log("[Tapir Mission V2] Touch/select the drone to start scan.");
     }
 
     public void StartDroneScan()
@@ -108,6 +109,16 @@ public class TapirMissionV2 : MonoBehaviour
 
     private IEnumerator DroneScanRoutine()
     {
+        Quaternion fixedDroneRotation = Quaternion.identity;
+
+        if (droneStartPoint != null)
+            fixedDroneRotation = droneStartPoint.rotation;
+        else if (droneObject != null)
+            fixedDroneRotation = droneObject.transform.rotation;
+
+        if (droneObject != null)
+            droneObject.transform.rotation = fixedDroneRotation;
+
         if (droneObject != null && droneScanPoint != null)
         {
             while (Vector3.Distance(droneObject.transform.position, droneScanPoint.position) > 0.1f)
@@ -118,20 +129,14 @@ public class TapirMissionV2 : MonoBehaviour
                     droneFlySpeed * Time.deltaTime
                 );
 
-                Vector3 lookTarget = droneScanPoint.position;
-                Vector3 direction = lookTarget - droneObject.transform.position;
-
-                if (direction.sqrMagnitude > 0.01f)
-                {
-                    droneObject.transform.rotation = Quaternion.Slerp(
-                        droneObject.transform.rotation,
-                        Quaternion.LookRotation(direction),
-                        5f * Time.deltaTime
-                    );
-                }
+                if (lockDroneRotationToStartPoint)
+                    droneObject.transform.rotation = fixedDroneRotation;
 
                 yield return null;
             }
+
+            if (lockDroneRotationToStartPoint)
+                droneObject.transform.rotation = fixedDroneRotation;
         }
 
         Debug.Log("[Tapir Mission V2] Drone reached tapir side. Showing scan FX.");
@@ -169,7 +174,7 @@ public class TapirMissionV2 : MonoBehaviour
         if (trunksCleared >= trunksNeeded)
         {
             state = MissionState.WaitingForTapirTouch;
-            Debug.Log("[Tapir Mission V2] Tapir rescued. Touch the tapir to make it walk to the drone.");
+            Debug.Log("[Tapir Mission V2] All trunks cleared. Touch/select the tapir.");
         }
     }
 
