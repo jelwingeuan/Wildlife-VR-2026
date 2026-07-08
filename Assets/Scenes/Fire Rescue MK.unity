@@ -1203,7 +1203,7 @@ BoxCollider:
   m_LayerOverridePriority: 0
   m_IsTrigger: 0
   m_ProvidesContacts: 0
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 3
   m_Size: {x: 2, y: 2, z: 2}
   m_Center: {x: 0.000000019609493, y: -0.000000059604645, z: -0}
@@ -1772,7 +1772,7 @@ BoxCollider:
   m_LayerOverridePriority: 0
   m_IsTrigger: 0
   m_ProvidesContacts: 0
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 3
   m_Size: {x: 2, y: 2, z: 2}
   m_Center: {x: -0.0000018877391, y: -0.000000059604645, z: 0.05}
@@ -2054,7 +2054,7 @@ BoxCollider:
   m_LayerOverridePriority: 0
   m_IsTrigger: 0
   m_ProvidesContacts: 0
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 3
   m_Size: {x: 2, y: 2, z: 2}
   m_Center: {x: -0.08, y: -0.000000059604645, z: 0.05}
@@ -3387,7 +3387,7 @@ BoxCollider:
   m_LayerOverridePriority: 0
   m_IsTrigger: 0
   m_ProvidesContacts: 0
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 3
   m_Size: {x: 2, y: 2, z: 2}
   m_Center: {x: -0.0000018877391, y: 0, z: 0.29}
@@ -3563,6 +3563,8 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 249606797}
   m_Mesh: {fileID: 2984268867197948368, guid: f8f4198f57e5a49eea3bbd1a39b13119, type: 3}
+<<<<<<< HEAD
+=======
 --- !u!1001 &258718712
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3645,6 +3647,7 @@ Transform:
   m_CorrespondingSourceObject: {fileID: -4216859302048453862, guid: e3ea218fcbe223646a1dbb15903cd4ef, type: 3}
   m_PrefabInstance: {fileID: 258718712}
   m_PrefabAsset: {fileID: 0}
+>>>>>>> parent of 172be56 (Added Rescue Tapir Script)
 --- !u!1 &259264876
 GameObject:
   m_ObjectHideFlags: 0
@@ -4578,6 +4581,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 146797358}
     m_Modifications:
+    - target: {fileID: -6860895033569716450, guid: e3ea218fcbe223646a1dbb15903cd4ef, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: -4216859302048453862, guid: e3ea218fcbe223646a1dbb15903cd4ef, type: 3}
       propertyPath: m_LocalScale.x
       value: 0.013
@@ -6596,7 +6603,7 @@ BoxCollider:
   m_LayerOverridePriority: 0
   m_IsTrigger: 0
   m_ProvidesContacts: 0
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 3
   m_Size: {x: 0.00002000001, y: 0.000020000005, z: 0.00002000001}
   m_Center: {x: 0.000015258789, y: 0, z: 0.000061035156}
@@ -7186,7 +7193,7 @@ BoxCollider:
   m_LayerOverridePriority: 0
   m_IsTrigger: 0
   m_ProvidesContacts: 0
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 3
   m_Size: {x: 2, y: 2, z: 2}
   m_Center: {x: -0.0000018877391, y: -0.000000059604645, z: 0.01}
@@ -7656,7 +7663,7 @@ BoxCollider:
   m_LayerOverridePriority: 0
   m_IsTrigger: 0
   m_ProvidesContacts: 0
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 3
   m_Size: {x: 2, y: 2, z: 2}
   m_Center: {x: -0.0000018877391, y: -0.000000059604645, z: 0.04}
@@ -7947,6 +7954,99 @@ Transform:
   m_CorrespondingSourceObject: {fileID: -4216859302048453862, guid: e3ea218fcbe223646a1dbb15903cd4ef, type: 3}
   m_PrefabInstance: {fileID: 640975107}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &650755237
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 650755240}
+  - component: {fileID: 650755239}
+  - component: {fileID: 650755238}
+  m_Layer: 0
+  m_Name: Terrain_(-97.50, 0.00, 99.20)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 2147483647
+  m_IsActive: 1
+--- !u!154 &650755238
+TerrainCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 650755237}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_TerrainData: {fileID: 15600000, guid: bc2a714db5e441a45869c290d6e384e5, type: 2}
+  m_EnableTreeColliders: 1
+--- !u!218 &650755239
+Terrain:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 650755237}
+  m_Enabled: 1
+  serializedVersion: 6
+  m_TerrainData: {fileID: 15600000, guid: bc2a714db5e441a45869c290d6e384e5, type: 2}
+  m_TreeDistance: 5000
+  m_TreeBillboardDistance: 2000
+  m_TreeCrossFadeLength: 5
+  m_TreeMaximumFullLODCount: 50
+  m_DetailObjectDistance: 80
+  m_DetailObjectDensity: 1
+  m_HeightmapPixelError: 5
+  m_SplatMapDistance: 1000
+  m_HeightmapMinimumLODSimplification: 0
+  m_HeightmapMaximumLOD: 0
+  m_ShadowCastingMode: 2
+  m_DrawHeightmap: 1
+  m_DrawInstanced: 0
+  m_DrawTreesAndFoliage: 1
+  m_StaticShadowCaster: 0
+  m_IgnoreQualitySettings: 0
+  m_ReflectionProbeUsage: 1
+  m_MaterialTemplate: {fileID: 2100000, guid: 594ea882c5a793440b60ff72d896021e, type: 2}
+  m_BakeLightProbesForTrees: 1
+  m_PreserveTreePrototypeLayers: 0
+  m_DeringLightProbesForTrees: 1
+  m_ReceiveGI: 1
+  m_ScaleInLightmap: 0.128
+  m_LightmapParameters: {fileID: 15203, guid: 0000000000000000f000000000000000, type: 0}
+  m_GroupingID: 0
+  m_RenderingLayerMask: 1
+  m_AllowAutoConnect: 1
+  m_EnableHeightmapRayTracing: 1
+  m_EnableTreesAndDetailsRayTracing: 0
+  m_TreeMotionVectorModeOverride: 3
+--- !u!4 &650755240
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 650755237}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -97.5, y: 0, z: 99.2}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &655520371
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -8051,7 +8151,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8135023674665499069, guid: 58d0a4ac86f2348deb02f3880c71378e, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8518324294302271954, guid: 58d0a4ac86f2348deb02f3880c71378e, type: 3}
       propertyPath: m_LocalPosition.x
@@ -8747,7 +8847,7 @@ BoxCollider:
   m_LayerOverridePriority: 0
   m_IsTrigger: 0
   m_ProvidesContacts: 0
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 3
   m_Size: {x: 2, y: 2, z: 2}
   m_Center: {x: -0.0000018877391, y: 0, z: 0.06}
@@ -8977,7 +9077,7 @@ BoxCollider:
   m_LayerOverridePriority: 0
   m_IsTrigger: 0
   m_ProvidesContacts: 0
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 3
   m_Size: {x: 30.098024, y: 732.88135, z: 37.86291}
   m_Center: {x: 6.64722, y: -697.31, z: 38.189545}
@@ -11211,7 +11311,7 @@ BoxCollider:
   m_LayerOverridePriority: 0
   m_IsTrigger: 0
   m_ProvidesContacts: 0
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 3
   m_Size: {x: 2, y: 2, z: 2}
   m_Center: {x: -0.00001527667, y: 0, z: 0.60000026}
@@ -11819,8 +11919,13 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 974309421}
   serializedVersion: 2
+<<<<<<< HEAD
+  m_LocalRotation: {x: 0, y: 0.34365973, z: 0, w: 0.9390943}
+  m_LocalPosition: {x: 7.8, y: 11.33, z: 46}
+=======
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -0.78721416, y: 11.026784, z: -3.281148}
+>>>>>>> parent of 172be56 (Added Rescue Tapir Script)
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -12104,7 +12209,7 @@ BoxCollider:
   m_LayerOverridePriority: 0
   m_IsTrigger: 0
   m_ProvidesContacts: 0
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 3
   m_Size: {x: 20, y: 20, z: 20}
   m_Center: {x: 29.56, y: 0, z: 4.87}
@@ -14341,7 +14446,7 @@ BoxCollider:
   m_LayerOverridePriority: 0
   m_IsTrigger: 0
   m_ProvidesContacts: 0
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 3
   m_Size: {x: 2, y: 2, z: 2}
   m_Center: {x: -0.0000018877391, y: -0.00000011920929, z: 0.1}
@@ -15771,7 +15876,7 @@ BoxCollider:
   m_LayerOverridePriority: 0
   m_IsTrigger: 0
   m_ProvidesContacts: 0
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 3
   m_Size: {x: 10, y: 10, z: 10}
   m_Center: {x: -0.48, y: 10.74, z: 0.27}
@@ -16102,7 +16207,7 @@ BoxCollider:
   m_LayerOverridePriority: 0
   m_IsTrigger: 0
   m_ProvidesContacts: 0
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 3
   m_Size: {x: 2, y: 2, z: 2}
   m_Center: {x: -0.0000018877391, y: -0.000000059604645, z: 0.05}
@@ -18886,6 +18991,41 @@ Transform:
   m_CorrespondingSourceObject: {fileID: -4216859302048453862, guid: e3ea218fcbe223646a1dbb15903cd4ef, type: 3}
   m_PrefabInstance: {fileID: 1627006770}
   m_PrefabAsset: {fileID: 0}
+<<<<<<< HEAD
+--- !u!1 &1629676334
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1629676335}
+  m_Layer: 0
+  m_Name: Remove Trunk
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1629676335
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1629676334}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 42.64251, y: 19.0847, z: 53.94461}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 1910367898}
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+=======
+>>>>>>> parent of 172be56 (Added Rescue Tapir Script)
 --- !u!1001 &1635667686
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -19740,7 +19880,7 @@ BoxCollider:
   m_LayerOverridePriority: 0
   m_IsTrigger: 0
   m_ProvidesContacts: 0
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 3
   m_Size: {x: 2, y: 2, z: 2}
   m_Center: {x: 0.000000019609493, y: -0.000000059604645, z: 0.07}
@@ -20355,7 +20495,7 @@ BoxCollider:
   m_LayerOverridePriority: 0
   m_IsTrigger: 0
   m_ProvidesContacts: 0
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 3
   m_Size: {x: 2, y: 2, z: 2}
   m_Center: {x: -0.0000018877391, y: 0, z: 0.03}
@@ -20605,7 +20745,7 @@ BoxCollider:
   m_LayerOverridePriority: 0
   m_IsTrigger: 0
   m_ProvidesContacts: 0
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 3
   m_Size: {x: 2, y: 2, z: 2}
   m_Center: {x: -0.14, y: -0.000000059604645, z: 0.16}
@@ -26319,7 +26459,7 @@ BoxCollider:
   m_LayerOverridePriority: 0
   m_IsTrigger: 0
   m_ProvidesContacts: 0
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 3
   m_Size: {x: 2, y: 2, z: 2}
   m_Center: {x: -0.0000018877391, y: -0.00000011920929, z: 0.1}
@@ -26998,6 +27138,15 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: -927199367670048503, guid: e3ea218fcbe223646a1dbb15903cd4ef, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1910367899}
+<<<<<<< HEAD
+    - targetCorrespondingSourceObject: {fileID: -927199367670048503, guid: e3ea218fcbe223646a1dbb15903cd4ef, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1910367901}
+    - targetCorrespondingSourceObject: {fileID: -927199367670048503, guid: e3ea218fcbe223646a1dbb15903cd4ef, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1910367905}
+=======
+>>>>>>> parent of 172be56 (Added Rescue Tapir Script)
   m_SourcePrefab: {fileID: 100100000, guid: e3ea218fcbe223646a1dbb15903cd4ef, type: 3}
 --- !u!4 &1910367898 stripped
 Transform:
@@ -27160,7 +27309,48 @@ Rigidbody:
   m_IsKinematic: 1
   m_Interpolate: 0
   m_Constraints: 0
+<<<<<<< HEAD
+  m_CollisionDetection: 2
+--- !u!114 &1910367901
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 704041880}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d61b6e62ba28ece48b61773b926e5d1f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::TrunkClearOnMove
+  mission: {fileID: 0}
+  movedDistanceToClear: 2.5
+  disappearWhenCleared: 1
+  clearedEffect: {fileID: 0}
+--- !u!65 &1910367905
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 704041880}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 3.501666, y: 4.4623966, z: 3.497099}
+  m_Center: {x: -0.06346849, y: 2.0848103, z: 0.000002690282}
+=======
   m_CollisionDetection: 0
+>>>>>>> parent of 172be56 (Added Rescue Tapir Script)
 --- !u!1 &1929608541
 GameObject:
   m_ObjectHideFlags: 0
@@ -29962,4 +30152,12 @@ SceneRoots:
   - {fileID: 1864857054}
   - {fileID: 1814969570}
   - {fileID: 1542425856}
+<<<<<<< HEAD
+  - {fileID: 436072321}
+  - {fileID: 1629676335}
+  - {fileID: 473643896}
+  - {fileID: 1025050805}
+  - {fileID: 650755240}
+=======
   - {fileID: 8863762}
+>>>>>>> parent of 172be56 (Added Rescue Tapir Script)
