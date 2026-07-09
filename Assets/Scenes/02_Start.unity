@@ -9144,18 +9144,18 @@ MonoBehaviour:
   lockDroneRotationToStartPoint: 1
   hideDroneAfterScan: 1
   tapirScanFX: {fileID: 1260237100}
-  scanFXDuration: 10
+  scanFXDuration: 3
   trunksNeeded: 2
   lyingTapirModel: {fileID: 766289570}
   walkingTapirModel: {fileID: 892004360}
-  tapirRoot: {fileID: 436072321}
+  tapirRoot: {fileID: 876722607}
   walkingTapirAnimator: {fileID: 892004361}
   walkStateName: rig|walk
   idleStateName: rig|idle
   tapirWalkTarget: {fileID: 1433301741}
-  tapirMoveSpeed: 1.2
+  tapirMoveSpeed: 0.6
   tapirTurnSpeed: 5
-  stopDistance: 0.25
+  stopDistance: 0.8
   missionCompletePanel: {fileID: 0}
   onMissionComplete:
     m_PersistentCalls:
@@ -23277,8 +23277,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1983058835}
   - component: {fileID: 1983058838}
-  - component: {fileID: 1983058837}
-  - component: {fileID: 1983058836}
+  - component: {fileID: 1983058839}
   m_Layer: 0
   m_Name: Tapir Touch Zone
   m_TagString: Untagged
@@ -23301,120 +23300,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 436072321}
   m_LocalEulerAnglesHint: {x: 0, y: 30.74, z: 0}
---- !u!114 &1983058836
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1983058834}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8a35f6cfbfba9b548aaa00d52cfe8a50, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Unity.XR.Interaction.Toolkit::UnityEngine.XR.Interaction.Toolkit.Interactables.XRSimpleInteractable
-  m_InteractionManager: {fileID: 0}
-  m_Colliders:
-  - {fileID: 1983058838}
-  m_InteractionLayers:
-    m_Bits: 1
-  m_DistanceCalculationMode: 1
-  m_SelectMode: 0
-  m_FocusMode: 1
-  m_CustomReticle: {fileID: 0}
-  m_AllowGazeInteraction: 0
-  m_AllowGazeSelect: 0
-  m_OverrideGazeTimeToSelect: 0
-  m_GazeTimeToSelect: 0.5
-  m_OverrideTimeToAutoDeselectGaze: 0
-  m_TimeToAutoDeselectGaze: 3
-  m_AllowGazeAssistance: 0
-  m_FirstHoverEntered:
-    m_PersistentCalls:
-      m_Calls: []
-  m_LastHoverExited:
-    m_PersistentCalls:
-      m_Calls: []
-  m_HoverEntered:
-    m_PersistentCalls:
-      m_Calls: []
-  m_HoverExited:
-    m_PersistentCalls:
-      m_Calls: []
-  m_FirstSelectEntered:
-    m_PersistentCalls:
-      m_Calls: []
-  m_LastSelectExited:
-    m_PersistentCalls:
-      m_Calls: []
-  m_SelectEntered:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 807871898}
-        m_TargetAssemblyTypeName: TapirMissionV2, Assembly-CSharp
-        m_MethodName: TouchTapirToWalk
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-  m_SelectExited:
-    m_PersistentCalls:
-      m_Calls: []
-  m_FirstFocusEntered:
-    m_PersistentCalls:
-      m_Calls: []
-  m_LastFocusExited:
-    m_PersistentCalls:
-      m_Calls: []
-  m_FocusEntered:
-    m_PersistentCalls:
-      m_Calls: []
-  m_FocusExited:
-    m_PersistentCalls:
-      m_Calls: []
-  m_Activated:
-    m_PersistentCalls:
-      m_Calls: []
-  m_Deactivated:
-    m_PersistentCalls:
-      m_Calls: []
-  m_StartingHoverFilters: []
-  m_StartingSelectFilters: []
-  m_StartingInteractionStrengthFilters: []
-  m_AutoFindParentInteractableInHierarchy: 0
-  m_ParentInteractableObject: {fileID: 0}
---- !u!54 &1983058837
-Rigidbody:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1983058834}
-  serializedVersion: 5
-  m_Mass: 1
-  m_LinearDamping: 0
-  m_AngularDamping: 0.05
-  m_CenterOfMass: {x: 0, y: 0, z: 0}
-  m_InertiaTensor: {x: 1, y: 1, z: 1}
-  m_InertiaRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ImplicitCom: 1
-  m_ImplicitTensor: 1
-  m_UseGravity: 0
-  m_IsKinematic: 1
-  m_Interpolate: 0
-  m_Constraints: 0
-  m_CollisionDetection: 0
 --- !u!65 &1983058838
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -23432,10 +23317,26 @@ BoxCollider:
   m_LayerOverridePriority: 0
   m_IsTrigger: 1
   m_ProvidesContacts: 0
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 3
   m_Size: {x: 0.7, y: 2, z: 4.04}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &1983058839
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1983058834}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1ee0779305b1d444891d8895bec84940, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::TapirTouchTrigger
+  mission: {fileID: 807871898}
+  playerCamera: {fileID: 1459272633}
+  touchDistance: 2
+  triggerOnlyOnce: 1
 --- !u!1001 &1987032230
 PrefabInstance:
   m_ObjectHideFlags: 0
