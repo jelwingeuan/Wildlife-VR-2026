@@ -24,13 +24,14 @@ public class TapirMissionV2 : MonoBehaviour
     public Transform droneScanPoint;
     public float droneFlySpeed = 3f;
     public bool lockDroneRotationToStartPoint = true;
+    public bool hideDroneAfterScan = true;
 
     [Header("Scan FX")]
     public GameObject tapirScanFX;
     public float scanFXDuration = 10f;
 
     [Header("Trunks")]
-    public int trunksNeeded = 3;
+    public int trunksNeeded = 2;
     private int trunksCleared = 0;
 
     [Header("Tapir Models")]
@@ -40,8 +41,8 @@ public class TapirMissionV2 : MonoBehaviour
     public Animator walkingTapirAnimator;
 
     [Header("Tapir Animation State Names")]
-    public string walkStateName = "";
-    public string idleStateName = "";
+    public string walkStateName = "rig|walk";
+    public string idleStateName = "rig|idle";
 
     [Header("Tapir Walk Target")]
     public Transform tapirWalkTarget;
@@ -59,11 +60,17 @@ public class TapirMissionV2 : MonoBehaviour
     public float sceneLoadDelay = 2f;
 
     private bool droneStarted = false;
+    private bool tapirModelSwitched = false;
     private bool tapirStartedWalking = false;
 
     private void Start()
     {
         state = MissionState.WaitingForDroneTouch;
+
+        trunksCleared = 0;
+        droneStarted = false;
+        tapirModelSwitched = false;
+        tapirStartedWalking = false;
 
         if (droneObject != null)
         {
@@ -154,6 +161,9 @@ public class TapirMissionV2 : MonoBehaviour
         if (tapirScanFX != null)
             tapirScanFX.SetActive(false);
 
+        if (hideDroneAfterScan && droneObject != null)
+            droneObject.SetActive(false);
+
         state = MissionState.RemovingTrunks;
 
         Debug.Log("[Tapir Mission V2] Scan finished. Clear the trunks.");
@@ -173,9 +183,29 @@ public class TapirMissionV2 : MonoBehaviour
 
         if (trunksCleared >= trunksNeeded)
         {
+            SwitchTapirToWalkingModelOnly();
+
             state = MissionState.WaitingForTapirTouch;
-            Debug.Log("[Tapir Mission V2] All trunks cleared. Touch/select the tapir.");
+            Debug.Log("[Tapir Mission V2] All trunks cleared. Tapir changed to walking model. Touch/select tapir to make it walk.");
         }
+    }
+
+    private void SwitchTapirToWalkingModelOnly()
+    {
+        if (tapirModelSwitched)
+            return;
+
+        tapirModelSwitched = true;
+
+        if (lyingTapirModel != null)
+            lyingTapirModel.SetActive(false);
+
+        if (walkingTapirModel != null)
+            walkingTapirModel.SetActive(true);
+
+        PlayIdleAnimation();
+
+        Debug.Log("[Tapir Mission V2] Tapir switched from lying model to walking model.");
     }
 
     public void TouchTapirToWalk()
@@ -192,13 +222,7 @@ public class TapirMissionV2 : MonoBehaviour
         tapirStartedWalking = true;
         state = MissionState.TapirWalkingToDrone;
 
-        Debug.Log("[Tapir Mission V2] Tapir touched. Switching to walking model.");
-
-        if (lyingTapirModel != null)
-            lyingTapirModel.SetActive(false);
-
-        if (walkingTapirModel != null)
-            walkingTapirModel.SetActive(true);
+        Debug.Log("[Tapir Mission V2] Tapir touched. Walking to target.");
 
         PlayWalkAnimation();
 
@@ -272,7 +296,7 @@ public class TapirMissionV2 : MonoBehaviour
     {
         state = MissionState.MissionComplete;
 
-        Debug.Log("[Tapir Mission V2] Mission complete. Tapir reached the drone.");
+        Debug.Log("[Tapir Mission V2] Mission complete. Tapir reached target.");
 
         if (missionCompletePanel != null)
             missionCompletePanel.SetActive(true);
