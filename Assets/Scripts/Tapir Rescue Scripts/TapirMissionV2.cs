@@ -44,11 +44,15 @@ public class TapirMissionV2 : MonoBehaviour
     public string walkStateName = "rig|walk";
     public string idleStateName = "rig|idle";
 
-    [Header("Tapir Walk Target")]
-    public Transform tapirWalkTarget;
+    [Header("Tapir Path")]
+    public Transform[] tapirPathPoints;
+    public Transform tapirWalkTarget; // backup if no path points are assigned
     public float tapirMoveSpeed = 1.2f;
     public float tapirTurnSpeed = 5f;
-    public float stopDistance = 0.25f;
+    public float stopDistance = 0.5f;
+
+    [Header("Ground Follow")]
+    public bool keepCurrentHeight = true;
 
     [Header("Mission Complete")]
     public GameObject missionCompletePanel;
@@ -229,47 +233,94 @@ public class TapirMissionV2 : MonoBehaviour
 
         StartCoroutine(TapirWalkRoutine());
     }
-
     private IEnumerator TapirWalkRoutine()
     {
-        if (tapirRoot == null || tapirWalkTarget == null)
+        if (tapirRoot == null)
         {
-            Debug.LogWarning("[Tapir Mission V2] Tapir Root or Tapir Walk Target is missing.");
+            Debug.LogWarning("[Tapir Mission V2] Tapir Root is missing.");
             yield break;
         }
 
-        while (FlatDistance(tapirRoot.position, tapirWalkTarget.position) > stopDistance)
+        // Use path points if assigned
+        if (tapirPathPoints != null && tapirPathPoints.Length > 0)
         {
-            MoveTapirTowards(tapirWalkTarget.position);
-            PlayWalkAnimation();
-            yield return null;
+            Debug.Log("[Tapir Mission V2] Tapir following waypoint path.");
+
+            for (int i = 0; i < tapirPathPoints.Length; i++)
+            {
+                if (tapirPathPoints[i] == null)
+                    continue;
+
+                Transform currentPoint = tapirPathPoints[i];
+
+                Debug.Log("[Tapir Mission V2] Moving to path point: " + currentPoint.name);
+
+                while (FlatDistance(tapirRoot.position, currentPoint.position) > stopDistance)
+                {
+                    MoveTapirTowards(currentPoint.position);
+                    PlayWalkAnimation();
+                    yield return null;
+                }
+            }
+        }
+        else
+        {
+            // Backup: use single target if no path points are assigned
+            if (tapirWalkTarget == null)
+            {
+                Debug.LogWarning("[Tapir Mission V2] No Tapir Path Points or Tapir Walk Target assigned.");
+                yield break;
+            }
+
+            Debug.Log("[Tapir Mission V2] No path points assigned. Moving to single target.");
+
+            while (FlatDistance(tapirRoot.position, tapirWalkTarget.position) > stopDistance)
+            {
+                MoveTapirTowards(tapirWalkTarget.position);
+                PlayWalkAnimation();
+                yield return null;
+            }
         }
 
         PlayIdleAnimation();
-
         CompleteMission();
     }
-
     private void MoveTapirTowards(Vector3 targetPosition)
     {
         Vector3 current = tapirRoot.position;
-        Vector3 target = new Vector3(targetPosition.x, current.y, targetPosition.z);
+
+        Vector3 target;
+
+        if (keepCurrentHeight)
+        {
+            target = new Vector3(targetPosition.x, current.y, targetPosition.z);
+        }
+        else
+        {
+            target = targetPosition;
+        }
 
         Vector3 direction = target - current;
 
         if (direction.magnitude < 0.05f)
             return;
 
-        tapirRoot.position += direction.normalized * tapirMoveSpeed * Time.deltaTime;
+        Vector3 move = direction.normalized * tapirMoveSpeed * Time.deltaTime;
+        tapirRoot.position += move;
 
-        Quaternion targetRotation = Quaternion.LookRotation(direction.normalized);
-        tapirRoot.rotation = Quaternion.Slerp(
-            tapirRoot.rotation,
-            targetRotation,
-            tapirTurnSpeed * Time.deltaTime
-        );
+        Vector3 lookDirection = new Vector3(direction.x, 0f, direction.z);
+
+        if (lookDirection.sqrMagnitude > 0.01f)
+        {
+            Quaternion targetRotation = Quaternion.LookRotation(lookDirection.normalized);
+
+            tapirRoot.rotation = Quaternion.Slerp(
+                tapirRoot.rotation,
+                targetRotation,
+                tapirTurnSpeed * Time.deltaTime
+            );
+        }
     }
-
     private float FlatDistance(Vector3 a, Vector3 b)
     {
         a.y = 0f;
