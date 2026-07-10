@@ -21,10 +21,10 @@ EditorBuildSettings:
     path: Assets/Scenes/02_Start.unity
     guid: e370f9f517ad3534f883d4764ce2e958
   - enabled: 1
-    path: Assets/Scenes/03_Mission.unity
+    path: Assets/Scenes/03_Home.unity
     guid: 5a35ea2d642c0ad4ab809ba0f0970586
   - enabled: 1
-    path: Assets/Scenes/04_Restore.unity
+    path: Assets/Scenes/06_Restore.unity
     guid: 5bf66924b1aa55c479e024ae66b8a1a2
   - enabled: 1
     path: Assets/Scenes/05_Free.unity
