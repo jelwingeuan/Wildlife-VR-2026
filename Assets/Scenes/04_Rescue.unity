@@ -5795,7 +5795,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::TapirTouchTrigger
   mission: {fileID: 1862320455}
-  playerCamera: {fileID: 0}
+  playerCamera: {fileID: 1113866660}
   touchDistance: 2
   leaveDistance: 2.8
   requirePlayerLeaveFirst: 1
@@ -24301,9 +24301,9 @@ MonoBehaviour:
   onMissionComplete:
     m_PersistentCalls:
       m_Calls: []
-  loadNextSceneDirectly: 0
-  nextSceneName: 
-  sceneLoadDelay: 2
+  loadNextSceneDirectly: 1
+  nextSceneName: 06_Restore
+  sceneLoadDelay: 4
 --- !u!4 &1862320456
 Transform:
   m_ObjectHideFlags: 0
