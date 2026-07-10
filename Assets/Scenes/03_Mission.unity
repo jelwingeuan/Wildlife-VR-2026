@@ -951,7 +951,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4375468716464814, guid: d383195b63305294fa0b3354e7cfd563, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 2.35
+      value: 2.276
       objectReference: {fileID: 0}
     - target: {fileID: 4375468716464814, guid: d383195b63305294fa0b3354e7cfd563, type: 3}
       propertyPath: m_LocalPosition.y
@@ -959,7 +959,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4375468716464814, guid: d383195b63305294fa0b3354e7cfd563, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -2.058
+      value: -1.994
       objectReference: {fileID: 0}
     - target: {fileID: 4375468716464814, guid: d383195b63305294fa0b3354e7cfd563, type: 3}
       propertyPath: m_LocalRotation.w
@@ -1084,6 +1084,14 @@ PrefabInstance:
     - target: {fileID: 2954258670668515537, guid: d383195b63305294fa0b3354e7cfd563, type: 3}
       propertyPath: m_LocalScale.z
       value: 16.8
+      objectReference: {fileID: 0}
+    - target: {fileID: 2954258670668515537, guid: d383195b63305294fa0b3354e7cfd563, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -0.193
+      objectReference: {fileID: 0}
+    - target: {fileID: 2954258670668515537, guid: d383195b63305294fa0b3354e7cfd563, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 2954258670668515537, guid: d383195b63305294fa0b3354e7cfd563, type: 3}
       propertyPath: m_ConstrainProportionsScale
@@ -7993,13 +8001,13 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 608397533}
   serializedVersion: 2
-  m_LocalRotation: {x: -0.702631, y: -0.07943369, z: -0.07943369, w: 0.702631}
-  m_LocalPosition: {x: -24.29, y: -10.29, z: 3.369999}
+  m_LocalRotation: {x: -0.7020593, y: -0.0843369, z: -0.0843369, w: 0.7020593}
+  m_LocalPosition: {x: -31.81, y: -9.97, z: 11.75}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1954163700}
-  m_LocalEulerAnglesHint: {x: -90, y: -12.9, z: 0}
+  m_LocalEulerAnglesHint: {x: -90, y: -13.7, z: 0}
 --- !u!1 &608982561
 GameObject:
   m_ObjectHideFlags: 0
