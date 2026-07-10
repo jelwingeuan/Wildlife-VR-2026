@@ -5555,7 +5555,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::TapirTouchTrigger
   mission: {fileID: 1954163699}
-  playerCamera: {fileID: 0}
+  playerCamera: {fileID: 1111706217}
   touchDistance: 2
   leaveDistance: 2.8
   requirePlayerLeaveFirst: 1
