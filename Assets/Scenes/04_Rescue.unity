@@ -24674,7 +24674,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   loadNextSceneDirectly: 1
-  nextSceneName: 06_Restore
+  nextSceneName: 05_Restore
   sceneLoadDelay: 4
 --- !u!4 &1862320456
 Transform:
