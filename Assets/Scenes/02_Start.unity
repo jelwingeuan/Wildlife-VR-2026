@@ -19515,7 +19515,7 @@ PrefabInstance:
     - target: {fileID: 3244112464240838676, guid: 90c861b6fdbae4dc3ad036edf3879cc7, type: 3}
       propertyPath: 'm_Materials.Array.data[0]'
       value: 
-      objectReference: {fileID: 2100000, guid: fdac89327c4dcb74daea8be54a809188, type: 2}
+      objectReference: {fileID: 2100000, guid: 226af9e12aa5e6049b6856212a0ac8cb, type: 2}
     - target: {fileID: 4069829945467981579, guid: 90c861b6fdbae4dc3ad036edf3879cc7, type: 3}
       propertyPath: 'm_Materials.Array.data[0]'
       value: 
@@ -19523,7 +19523,7 @@ PrefabInstance:
     - target: {fileID: 4310876052869166411, guid: 90c861b6fdbae4dc3ad036edf3879cc7, type: 3}
       propertyPath: 'm_Materials.Array.data[0]'
       value: 
-      objectReference: {fileID: 2100000, guid: 8f340219eecd9cb43a58b735dcd59798, type: 2}
+      objectReference: {fileID: 2100000, guid: 226af9e12aa5e6049b6856212a0ac8cb, type: 2}
     - target: {fileID: 5388170469068656088, guid: 90c861b6fdbae4dc3ad036edf3879cc7, type: 3}
       propertyPath: 'm_Materials.Array.data[0]'
       value: 
@@ -19531,7 +19531,7 @@ PrefabInstance:
     - target: {fileID: 5689886684857530443, guid: 90c861b6fdbae4dc3ad036edf3879cc7, type: 3}
       propertyPath: 'm_Materials.Array.data[0]'
       value: 
-      objectReference: {fileID: 2100000, guid: 8f340219eecd9cb43a58b735dcd59798, type: 2}
+      objectReference: {fileID: 2100000, guid: 226af9e12aa5e6049b6856212a0ac8cb, type: 2}
     - target: {fileID: 8111687137510808631, guid: 90c861b6fdbae4dc3ad036edf3879cc7, type: 3}
       propertyPath: 'm_Materials.Array.data[0]'
       value: 
@@ -23759,6 +23759,8 @@ MonoBehaviour:
   mission: {fileID: 807871898}
   playerCamera: {fileID: 1459272633}
   touchDistance: 2
+  leaveDistance: 2.8
+  readyDelay: 1.5
   triggerOnlyOnce: 1
 --- !u!1001 &1987032230
 PrefabInstance:
