@@ -24986,7 +24986,7 @@ MonoBehaviour:
   walkStateName: rig|walk
   idleStateName: rig|idle
   tapirWalkTarget: {fileID: 1822351590}
-  tapirMoveSpeed: 0.6
+  tapirMoveSpeed: 2
   tapirTurnSpeed: 5
   stopDistance: 0.8
   missionCompletePanel: {fileID: 0}
