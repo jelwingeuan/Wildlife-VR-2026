@@ -8,18 +8,17 @@ public class TapirTouchTrigger : MonoBehaviour
     [Header("Player")]
     public Transform playerCamera;
 
-    [Header("Touch Distance")]
-    public float touchDistance = 2.0f;
-    public float leaveDistance = 2.8f;
+    [Header("Distance Settings")]
+    public float touchDistance = 1.5f;
+    public float leaveDistance = 3.0f;
 
-    [Header("Timing")]
-    public float readyDelay = 1.5f;
+    [Header("Trigger Settings")]
+    public bool requirePlayerLeaveFirst = true;
     public bool triggerOnlyOnce = true;
 
     private bool hasTriggered = false;
+    private bool playerHasLeftArea = false;
     private bool missionReadyDetected = false;
-    private bool playerHasLeftTapirArea = false;
-    private float readyTimer = 0f;
 
     private void Update()
     {
@@ -29,11 +28,11 @@ public class TapirTouchTrigger : MonoBehaviour
         if (mission == null || playerCamera == null)
             return;
 
+        // Only allow tapir walking after all trunks are cleared
         if (mission.state != TapirMissionV2.MissionState.WaitingForTapirTouch)
         {
             missionReadyDetected = false;
-            playerHasLeftTapirArea = false;
-            readyTimer = 0f;
+            playerHasLeftArea = false;
             return;
         }
 
@@ -42,22 +41,16 @@ public class TapirTouchTrigger : MonoBehaviour
         if (!missionReadyDetected)
         {
             missionReadyDetected = true;
-            readyTimer = 0f;
-
-            Debug.Log("[Tapir Touch] Tapir is now idle. Player must move away and come back to trigger walking.");
+            Debug.Log("[Tapir Touch] Tapir is idle now. Walk near the tapir to trigger movement.");
         }
 
-        readyTimer += Time.deltaTime;
-
-        if (readyTimer < readyDelay)
-            return;
-
-        if (!playerHasLeftTapirArea)
+        // This prevents instant auto-trigger if player is already standing near the tapir
+        if (requirePlayerLeaveFirst && !playerHasLeftArea)
         {
             if (distance >= leaveDistance)
             {
-                playerHasLeftTapirArea = true;
-                Debug.Log("[Tapir Touch] Player left tapir area. Come close again to make tapir walk.");
+                playerHasLeftArea = true;
+                Debug.Log("[Tapir Touch] Player moved away. Now walk near the tapir to make it walk.");
             }
 
             return;
@@ -66,7 +59,7 @@ public class TapirTouchTrigger : MonoBehaviour
         if (distance <= touchDistance)
         {
             hasTriggered = true;
-            Debug.Log("[Tapir Touch] Player returned close to tapir. Walking triggered.");
+            Debug.Log("[Tapir Touch] Player walked near tapir. Tapir walking triggered.");
             mission.TouchTapirToWalk();
         }
     }
