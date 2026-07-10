@@ -62,6 +62,7 @@ public class TapirMissionV2 : MonoBehaviour
     private bool droneStarted = false;
     private bool tapirModelSwitched = false;
     private bool tapirStartedWalking = false;
+    private string currentAnimationState = "";
 
     private void Start()
     {
@@ -278,18 +279,34 @@ public class TapirMissionV2 : MonoBehaviour
 
     private void PlayWalkAnimation()
     {
-        if (walkingTapirAnimator != null && !string.IsNullOrEmpty(walkStateName))
-        {
-            walkingTapirAnimator.CrossFadeInFixedTime(walkStateName, 0.2f);
-        }
+        if (walkingTapirAnimator == null || string.IsNullOrEmpty(walkStateName))
+            return;
+
+        if (currentAnimationState == walkStateName)
+            return;
+
+        currentAnimationState = walkStateName;
+
+        walkingTapirAnimator.speed = 1f;
+        walkingTapirAnimator.CrossFadeInFixedTime(walkStateName, 0.15f);
+
+        Debug.Log("[Tapir Mission V2] Playing walk animation: " + walkStateName);
     }
 
     private void PlayIdleAnimation()
     {
-        if (walkingTapirAnimator != null && !string.IsNullOrEmpty(idleStateName))
-        {
-            walkingTapirAnimator.CrossFadeInFixedTime(idleStateName, 0.2f);
-        }
+        if (walkingTapirAnimator == null || string.IsNullOrEmpty(idleStateName))
+            return;
+
+        if (currentAnimationState == idleStateName)
+            return;
+
+        currentAnimationState = idleStateName;
+
+        walkingTapirAnimator.speed = 1f;
+        walkingTapirAnimator.CrossFadeInFixedTime(idleStateName, 0.15f);
+
+        Debug.Log("[Tapir Mission V2] Playing idle animation: " + idleStateName);
     }
 
     private void CompleteMission()
