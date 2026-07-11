@@ -24,10 +24,10 @@ EditorBuildSettings:
     path: Assets/Scenes/03_Home.unity
     guid: 5a35ea2d642c0ad4ab809ba0f0970586
   - enabled: 1
-    path: Assets/Scenes/06_Restore.unity
+    path: Assets/Scenes/05_Restore.unity
     guid: 5bf66924b1aa55c479e024ae66b8a1a2
   - enabled: 1
-    path: Assets/Scenes/05_Free.unity
+    path: Assets/Scenes/06_Free.unity
     guid: 45e331882bf771b4e89549d23764b9d0
   m_configObjects:
     Unity.XR.Oculus.Settings: {fileID: 11400000, guid: bfa1182bd221b4ca89619141f66f1260, type: 2}
