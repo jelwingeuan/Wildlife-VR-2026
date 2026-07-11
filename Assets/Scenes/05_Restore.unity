@@ -3077,7 +3077,7 @@ MonoBehaviour:
   treeModel: {fileID: 672289783}
   saplingScale: 0.05
   fadeDuration: 5
-  growDuration: 20
+  growDuration: 8
 --- !u!65 &364261817
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -5662,7 +5662,7 @@ MonoBehaviour:
   treeModel: {fileID: 207742730}
   saplingScale: 0.05
   fadeDuration: 5
-  growDuration: 20
+  growDuration: 8
 --- !u!65 &609542433
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -16350,7 +16350,7 @@ MonoBehaviour:
   treeModel: {fileID: 283169695}
   saplingScale: 0.05
   fadeDuration: 5
-  growDuration: 20
+  growDuration: 8
 --- !u!65 &1702153383
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -21094,7 +21094,7 @@ MonoBehaviour:
   treeModel: {fileID: 677190191}
   saplingScale: 0.05
   fadeDuration: 5
-  growDuration: 20
+  growDuration: 8
 --- !u!65 &2083294881
 BoxCollider:
   m_ObjectHideFlags: 0
