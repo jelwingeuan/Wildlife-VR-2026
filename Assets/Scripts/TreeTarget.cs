@@ -16,9 +16,12 @@ public class TreeTarget : MonoBehaviour
     private Vector3 finalSize;
     private bool isPlanted = false;
     private Renderer[] treeRenderers;
+    private TreeRestoreMissionManager missionManager;
 
     void Start()
     {
+        missionManager = GetComponentInParent<TreeRestoreMissionManager>();
+
         if (treeModel != null)
         {
             // Hunt down and destroy any Animators that are forcing the scale to 100%
@@ -91,6 +94,19 @@ public class TreeTarget : MonoBehaviour
 
         // Snap exactly to final size at the very end
         treeModel.transform.localScale = finalSize;
+
+        // Tell the mission manager that this tree is fully grown.
+        if (missionManager != null)
+        {
+            missionManager.RegisterTreeCompleted(this);
+        }
+        else
+        {
+            Debug.LogError(
+                "No TreeRestoreMissionManager found above " + name,
+                this
+            );
+        }
     }
 
     // Helper function to change the opacity of the materials safely
