@@ -4802,7 +4802,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::SeedLauncher
   seedParticles: {fileID: 942097731}
-  launcherAudio: {fileID: 0}
+  launcherAudio: {fileID: 1366800757}
   controllerNode: 5
 --- !u!82 &1366800757
 AudioSource:
