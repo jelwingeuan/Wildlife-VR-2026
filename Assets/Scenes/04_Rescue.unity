@@ -1420,15 +1420,15 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: -8679921383154817045, guid: e7e2cf6366b818642b53ff9ecb0a1608, type: 3}
       propertyPath: m_LocalScale.x
-      value: 0.05000001
+      value: 0.04
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: e7e2cf6366b818642b53ff9ecb0a1608, type: 3}
       propertyPath: m_LocalScale.y
-      value: 0.05000001
+      value: 0.04
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: e7e2cf6366b818642b53ff9ecb0a1608, type: 3}
       propertyPath: m_LocalScale.z
-      value: 0.05000001
+      value: 0.04
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: e7e2cf6366b818642b53ff9ecb0a1608, type: 3}
       propertyPath: m_LocalPosition.x
@@ -17502,7 +17502,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &1289115624
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -27648,15 +27648,15 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: -8679921383154817045, guid: bcf86ef2e6e80734dace5ed601098202, type: 3}
       propertyPath: m_LocalScale.x
-      value: 0.049999997
+      value: 0.04
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: bcf86ef2e6e80734dace5ed601098202, type: 3}
       propertyPath: m_LocalScale.y
-      value: 0.049999997
+      value: 0.04
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: bcf86ef2e6e80734dace5ed601098202, type: 3}
       propertyPath: m_LocalScale.z
-      value: 0.049999997
+      value: 0.04
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: bcf86ef2e6e80734dace5ed601098202, type: 3}
       propertyPath: m_LocalPosition.x
