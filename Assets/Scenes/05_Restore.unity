@@ -9107,7 +9107,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::TreeRestoreMissionManager
   nextSceneName: 06_Free
   transitionDelay: 3
-  missionCompleteUI: {fileID: 0}
+  missionCompleteUI: {fileID: 1059544734}
 --- !u!1001 &912208878
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -10221,7 +10221,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &1059544735
 MonoBehaviour:
   m_ObjectHideFlags: 0
