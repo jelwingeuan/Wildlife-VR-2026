@@ -977,6 +977,11 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 1024214072490390, guid: d383195b63305294fa0b3354e7cfd563, type: 3}
   m_PrefabInstance: {fileID: 122421823}
   m_PrefabAsset: {fileID: 0}
+--- !u!198 &122421826 stripped
+ParticleSystem:
+  m_CorrespondingSourceObject: {fileID: 198339005276279218, guid: d383195b63305294fa0b3354e7cfd563, type: 3}
+  m_PrefabInstance: {fileID: 122421823}
+  m_PrefabAsset: {fileID: 0}
 --- !u!114 &122421827
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -989,8 +994,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0cdaa52c59490cd4f90c9a9223391dad, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::FireTarget
-  fireParticles: {fileID: 319218468}
-  fireSoundManager: {fileID: 319218471}
+  fireParticles: {fileID: 122421826}
+  fireSoundManager: {fileID: 122421829}
 --- !u!65 &122421828
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -1024,7 +1029,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f8dee2aab03d34ebaa74e04695671fa0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::FireSoundManager
-  fireAudioSource: {fileID: 1273137234}
+  fireAudioSource: {fileID: 122421830}
 --- !u!82 &122421830
 AudioSource:
   m_ObjectHideFlags: 0
@@ -10062,6 +10067,11 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 1024214072490390, guid: d383195b63305294fa0b3354e7cfd563, type: 3}
   m_PrefabInstance: {fileID: 742470151}
   m_PrefabAsset: {fileID: 0}
+--- !u!198 &742470154 stripped
+ParticleSystem:
+  m_CorrespondingSourceObject: {fileID: 198339005276279218, guid: d383195b63305294fa0b3354e7cfd563, type: 3}
+  m_PrefabInstance: {fileID: 742470151}
+  m_PrefabAsset: {fileID: 0}
 --- !u!114 &742470155
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -10074,8 +10084,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0cdaa52c59490cd4f90c9a9223391dad, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::FireTarget
-  fireParticles: {fileID: 319218468}
-  fireSoundManager: {fileID: 319218471}
+  fireParticles: {fileID: 742470154}
+  fireSoundManager: {fileID: 742470157}
 --- !u!65 &742470156
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -10109,7 +10119,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f8dee2aab03d34ebaa74e04695671fa0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::FireSoundManager
-  fireAudioSource: {fileID: 1273137234}
+  fireAudioSource: {fileID: 742470158}
 --- !u!82 &742470158
 AudioSource:
   m_ObjectHideFlags: 0
@@ -11228,6 +11238,11 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 1000012771167946, guid: f455597ffcfafb94c91044210859130a, type: 3}
   m_PrefabInstance: {fileID: 836191380}
   m_PrefabAsset: {fileID: 0}
+--- !u!198 &836191383 stripped
+ParticleSystem:
+  m_CorrespondingSourceObject: {fileID: 198000012712491546, guid: f455597ffcfafb94c91044210859130a, type: 3}
+  m_PrefabInstance: {fileID: 836191380}
+  m_PrefabAsset: {fileID: 0}
 --- !u!114 &836191384
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -11240,8 +11255,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0cdaa52c59490cd4f90c9a9223391dad, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::FireTarget
-  fireParticles: {fileID: 319218468}
-  fireSoundManager: {fileID: 319218471}
+  fireParticles: {fileID: 836191383}
+  fireSoundManager: {fileID: 836191386}
 --- !u!65 &836191385
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -11275,7 +11290,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f8dee2aab03d34ebaa74e04695671fa0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::FireSoundManager
-  fireAudioSource: {fileID: 1273137234}
+  fireAudioSource: {fileID: 836191387}
 --- !u!82 &836191387
 AudioSource:
   m_ObjectHideFlags: 0
@@ -11959,6 +11974,11 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 1024214072490390, guid: d383195b63305294fa0b3354e7cfd563, type: 3}
   m_PrefabInstance: {fileID: 884578609}
   m_PrefabAsset: {fileID: 0}
+--- !u!198 &884578612 stripped
+ParticleSystem:
+  m_CorrespondingSourceObject: {fileID: 198339005276279218, guid: d383195b63305294fa0b3354e7cfd563, type: 3}
+  m_PrefabInstance: {fileID: 884578609}
+  m_PrefabAsset: {fileID: 0}
 --- !u!114 &884578613
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -11971,8 +11991,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0cdaa52c59490cd4f90c9a9223391dad, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::FireTarget
-  fireParticles: {fileID: 319218468}
-  fireSoundManager: {fileID: 319218471}
+  fireParticles: {fileID: 884578612}
+  fireSoundManager: {fileID: 884578615}
 --- !u!65 &884578614
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -12006,7 +12026,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f8dee2aab03d34ebaa74e04695671fa0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::FireSoundManager
-  fireAudioSource: {fileID: 1273137234}
+  fireAudioSource: {fileID: 884578616}
 --- !u!82 &884578616
 AudioSource:
   m_ObjectHideFlags: 0
@@ -13956,6 +13976,11 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 1024214072490390, guid: d383195b63305294fa0b3354e7cfd563, type: 3}
   m_PrefabInstance: {fileID: 1061263574}
   m_PrefabAsset: {fileID: 0}
+--- !u!198 &1061263577 stripped
+ParticleSystem:
+  m_CorrespondingSourceObject: {fileID: 198339005276279218, guid: d383195b63305294fa0b3354e7cfd563, type: 3}
+  m_PrefabInstance: {fileID: 1061263574}
+  m_PrefabAsset: {fileID: 0}
 --- !u!114 &1061263578
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -13968,8 +13993,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0cdaa52c59490cd4f90c9a9223391dad, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::FireTarget
-  fireParticles: {fileID: 319218468}
-  fireSoundManager: {fileID: 319218471}
+  fireParticles: {fileID: 1061263577}
+  fireSoundManager: {fileID: 1061263580}
 --- !u!65 &1061263579
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -14003,7 +14028,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f8dee2aab03d34ebaa74e04695671fa0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::FireSoundManager
-  fireAudioSource: {fileID: 1273137234}
+  fireAudioSource: {fileID: 1061263581}
 --- !u!82 &1061263581
 AudioSource:
   m_ObjectHideFlags: 0
@@ -15845,6 +15870,11 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 1024214072490390, guid: d383195b63305294fa0b3354e7cfd563, type: 3}
   m_PrefabInstance: {fileID: 1133072859}
   m_PrefabAsset: {fileID: 0}
+--- !u!198 &1133072862 stripped
+ParticleSystem:
+  m_CorrespondingSourceObject: {fileID: 198339005276279218, guid: d383195b63305294fa0b3354e7cfd563, type: 3}
+  m_PrefabInstance: {fileID: 1133072859}
+  m_PrefabAsset: {fileID: 0}
 --- !u!114 &1133072863
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -15857,8 +15887,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0cdaa52c59490cd4f90c9a9223391dad, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::FireTarget
-  fireParticles: {fileID: 319218468}
-  fireSoundManager: {fileID: 319218471}
+  fireParticles: {fileID: 1133072862}
+  fireSoundManager: {fileID: 1133072865}
 --- !u!65 &1133072864
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -15892,7 +15922,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f8dee2aab03d34ebaa74e04695671fa0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::FireSoundManager
-  fireAudioSource: {fileID: 1273137234}
+  fireAudioSource: {fileID: 1133072866}
 --- !u!82 &1133072866
 AudioSource:
   m_ObjectHideFlags: 0
@@ -18016,6 +18046,11 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 1024214072490390, guid: d383195b63305294fa0b3354e7cfd563, type: 3}
   m_PrefabInstance: {fileID: 1266388141}
   m_PrefabAsset: {fileID: 0}
+--- !u!198 &1266388144 stripped
+ParticleSystem:
+  m_CorrespondingSourceObject: {fileID: 198339005276279218, guid: d383195b63305294fa0b3354e7cfd563, type: 3}
+  m_PrefabInstance: {fileID: 1266388141}
+  m_PrefabAsset: {fileID: 0}
 --- !u!114 &1266388145
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -18028,8 +18063,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0cdaa52c59490cd4f90c9a9223391dad, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::FireTarget
-  fireParticles: {fileID: 319218468}
-  fireSoundManager: {fileID: 319218471}
+  fireParticles: {fileID: 1266388144}
+  fireSoundManager: {fileID: 1266388147}
 --- !u!65 &1266388146
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -18063,7 +18098,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f8dee2aab03d34ebaa74e04695671fa0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::FireSoundManager
-  fireAudioSource: {fileID: 1273137234}
+  fireAudioSource: {fileID: 1266388148}
 --- !u!82 &1266388148
 AudioSource:
   m_ObjectHideFlags: 0
@@ -18354,6 +18389,11 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 1024214072490390, guid: d383195b63305294fa0b3354e7cfd563, type: 3}
   m_PrefabInstance: {fileID: 1273137228}
   m_PrefabAsset: {fileID: 0}
+--- !u!198 &1273137231 stripped
+ParticleSystem:
+  m_CorrespondingSourceObject: {fileID: 198339005276279218, guid: d383195b63305294fa0b3354e7cfd563, type: 3}
+  m_PrefabInstance: {fileID: 1273137228}
+  m_PrefabAsset: {fileID: 0}
 --- !u!114 &1273137232
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -18366,8 +18406,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0cdaa52c59490cd4f90c9a9223391dad, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::FireTarget
-  fireParticles: {fileID: 319218468}
-  fireSoundManager: {fileID: 319218471}
+  fireParticles: {fileID: 1273137231}
+  fireSoundManager: {fileID: 1273137235}
 --- !u!65 &1273137233
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -20161,6 +20201,11 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 1024214072490390, guid: d383195b63305294fa0b3354e7cfd563, type: 3}
   m_PrefabInstance: {fileID: 1414088367}
   m_PrefabAsset: {fileID: 0}
+--- !u!198 &1414088370 stripped
+ParticleSystem:
+  m_CorrespondingSourceObject: {fileID: 198339005276279218, guid: d383195b63305294fa0b3354e7cfd563, type: 3}
+  m_PrefabInstance: {fileID: 1414088367}
+  m_PrefabAsset: {fileID: 0}
 --- !u!114 &1414088371
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -20173,8 +20218,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0cdaa52c59490cd4f90c9a9223391dad, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::FireTarget
-  fireParticles: {fileID: 319218468}
-  fireSoundManager: {fileID: 319218471}
+  fireParticles: {fileID: 1414088370}
+  fireSoundManager: {fileID: 1414088373}
 --- !u!65 &1414088372
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -20208,7 +20253,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f8dee2aab03d34ebaa74e04695671fa0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::FireSoundManager
-  fireAudioSource: {fileID: 1273137234}
+  fireAudioSource: {fileID: 1414088374}
 --- !u!82 &1414088374
 AudioSource:
   m_ObjectHideFlags: 0
@@ -20804,6 +20849,11 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 1024214072490390, guid: d383195b63305294fa0b3354e7cfd563, type: 3}
   m_PrefabInstance: {fileID: 1426116733}
   m_PrefabAsset: {fileID: 0}
+--- !u!198 &1426116736 stripped
+ParticleSystem:
+  m_CorrespondingSourceObject: {fileID: 198339005276279218, guid: d383195b63305294fa0b3354e7cfd563, type: 3}
+  m_PrefabInstance: {fileID: 1426116733}
+  m_PrefabAsset: {fileID: 0}
 --- !u!114 &1426116737
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -20816,8 +20866,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0cdaa52c59490cd4f90c9a9223391dad, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::FireTarget
-  fireParticles: {fileID: 319218468}
-  fireSoundManager: {fileID: 319218471}
+  fireParticles: {fileID: 1426116736}
+  fireSoundManager: {fileID: 1426116739}
 --- !u!65 &1426116738
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -20851,7 +20901,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f8dee2aab03d34ebaa74e04695671fa0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::FireSoundManager
-  fireAudioSource: {fileID: 1273137234}
+  fireAudioSource: {fileID: 1426116740}
 --- !u!82 &1426116740
 AudioSource:
   m_ObjectHideFlags: 0
@@ -21650,6 +21700,11 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 1949376083282614, guid: 4dd6c2b5539220947a0c5938f0a39d20, type: 3}
   m_PrefabInstance: {fileID: 1480973310}
   m_PrefabAsset: {fileID: 0}
+--- !u!198 &1480973313 stripped
+ParticleSystem:
+  m_CorrespondingSourceObject: {fileID: 198409505784446586, guid: 4dd6c2b5539220947a0c5938f0a39d20, type: 3}
+  m_PrefabInstance: {fileID: 1480973310}
+  m_PrefabAsset: {fileID: 0}
 --- !u!114 &1480973314
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -21662,8 +21717,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0cdaa52c59490cd4f90c9a9223391dad, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::FireTarget
-  fireParticles: {fileID: 319218468}
-  fireSoundManager: {fileID: 319218471}
+  fireParticles: {fileID: 1480973313}
+  fireSoundManager: {fileID: 1480973316}
 --- !u!65 &1480973315
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -21697,7 +21752,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f8dee2aab03d34ebaa74e04695671fa0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::FireSoundManager
-  fireAudioSource: {fileID: 1273137234}
+  fireAudioSource: {fileID: 1480973317}
 --- !u!82 &1480973317
 AudioSource:
   m_ObjectHideFlags: 0
@@ -24970,6 +25025,11 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 1024214072490390, guid: d383195b63305294fa0b3354e7cfd563, type: 3}
   m_PrefabInstance: {fileID: 1736307672}
   m_PrefabAsset: {fileID: 0}
+--- !u!198 &1736307675 stripped
+ParticleSystem:
+  m_CorrespondingSourceObject: {fileID: 198339005276279218, guid: d383195b63305294fa0b3354e7cfd563, type: 3}
+  m_PrefabInstance: {fileID: 1736307672}
+  m_PrefabAsset: {fileID: 0}
 --- !u!114 &1736307676
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -24982,8 +25042,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0cdaa52c59490cd4f90c9a9223391dad, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::FireTarget
-  fireParticles: {fileID: 319218468}
-  fireSoundManager: {fileID: 319218471}
+  fireParticles: {fileID: 1736307675}
+  fireSoundManager: {fileID: 1736307678}
 --- !u!65 &1736307677
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -25017,7 +25077,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f8dee2aab03d34ebaa74e04695671fa0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::FireSoundManager
-  fireAudioSource: {fileID: 1273137234}
+  fireAudioSource: {fileID: 1736307679}
 --- !u!82 &1736307679
 AudioSource:
   m_ObjectHideFlags: 0
@@ -25943,6 +26003,11 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 1024214072490390, guid: d383195b63305294fa0b3354e7cfd563, type: 3}
   m_PrefabInstance: {fileID: 1783765529}
   m_PrefabAsset: {fileID: 0}
+--- !u!198 &1783765532 stripped
+ParticleSystem:
+  m_CorrespondingSourceObject: {fileID: 198339005276279218, guid: d383195b63305294fa0b3354e7cfd563, type: 3}
+  m_PrefabInstance: {fileID: 1783765529}
+  m_PrefabAsset: {fileID: 0}
 --- !u!114 &1783765533
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -25955,8 +26020,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0cdaa52c59490cd4f90c9a9223391dad, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::FireTarget
-  fireParticles: {fileID: 319218468}
-  fireSoundManager: {fileID: 319218471}
+  fireParticles: {fileID: 1783765532}
+  fireSoundManager: {fileID: 1783765535}
 --- !u!65 &1783765534
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -25990,7 +26055,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f8dee2aab03d34ebaa74e04695671fa0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::FireSoundManager
-  fireAudioSource: {fileID: 1273137234}
+  fireAudioSource: {fileID: 1783765536}
 --- !u!82 &1783765536
 AudioSource:
   m_ObjectHideFlags: 0
@@ -27248,6 +27313,11 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 1024214072490390, guid: d383195b63305294fa0b3354e7cfd563, type: 3}
   m_PrefabInstance: {fileID: 1886651774}
   m_PrefabAsset: {fileID: 0}
+--- !u!198 &1886651777 stripped
+ParticleSystem:
+  m_CorrespondingSourceObject: {fileID: 198339005276279218, guid: d383195b63305294fa0b3354e7cfd563, type: 3}
+  m_PrefabInstance: {fileID: 1886651774}
+  m_PrefabAsset: {fileID: 0}
 --- !u!114 &1886651778
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -27260,8 +27330,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0cdaa52c59490cd4f90c9a9223391dad, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::FireTarget
-  fireParticles: {fileID: 319218468}
-  fireSoundManager: {fileID: 319218471}
+  fireParticles: {fileID: 1886651777}
+  fireSoundManager: {fileID: 1886651780}
 --- !u!65 &1886651779
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -27295,7 +27365,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f8dee2aab03d34ebaa74e04695671fa0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::FireSoundManager
-  fireAudioSource: {fileID: 1273137234}
+  fireAudioSource: {fileID: 1886651781}
 --- !u!82 &1886651781
 AudioSource:
   m_ObjectHideFlags: 0
@@ -27640,6 +27710,11 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 1024214072490390, guid: d383195b63305294fa0b3354e7cfd563, type: 3}
   m_PrefabInstance: {fileID: 1886787624}
   m_PrefabAsset: {fileID: 0}
+--- !u!198 &1886787627 stripped
+ParticleSystem:
+  m_CorrespondingSourceObject: {fileID: 198339005276279218, guid: d383195b63305294fa0b3354e7cfd563, type: 3}
+  m_PrefabInstance: {fileID: 1886787624}
+  m_PrefabAsset: {fileID: 0}
 --- !u!114 &1886787628
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -27652,8 +27727,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0cdaa52c59490cd4f90c9a9223391dad, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::FireTarget
-  fireParticles: {fileID: 319218468}
-  fireSoundManager: {fileID: 319218471}
+  fireParticles: {fileID: 1886787627}
+  fireSoundManager: {fileID: 1886787630}
 --- !u!65 &1886787629
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -27687,7 +27762,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f8dee2aab03d34ebaa74e04695671fa0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::FireSoundManager
-  fireAudioSource: {fileID: 1273137234}
+  fireAudioSource: {fileID: 1886787631}
 --- !u!82 &1886787631
 AudioSource:
   m_ObjectHideFlags: 0
@@ -28115,6 +28190,11 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 1024214072490390, guid: d383195b63305294fa0b3354e7cfd563, type: 3}
   m_PrefabInstance: {fileID: 1906359774}
   m_PrefabAsset: {fileID: 0}
+--- !u!198 &1906359777 stripped
+ParticleSystem:
+  m_CorrespondingSourceObject: {fileID: 198339005276279218, guid: d383195b63305294fa0b3354e7cfd563, type: 3}
+  m_PrefabInstance: {fileID: 1906359774}
+  m_PrefabAsset: {fileID: 0}
 --- !u!114 &1906359778
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -28127,8 +28207,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0cdaa52c59490cd4f90c9a9223391dad, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::FireTarget
-  fireParticles: {fileID: 319218468}
-  fireSoundManager: {fileID: 319218471}
+  fireParticles: {fileID: 1906359777}
+  fireSoundManager: {fileID: 1906359780}
 --- !u!65 &1906359779
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -28162,7 +28242,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f8dee2aab03d34ebaa74e04695671fa0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::FireSoundManager
-  fireAudioSource: {fileID: 1273137234}
+  fireAudioSource: {fileID: 1906359781}
 --- !u!82 &1906359781
 AudioSource:
   m_ObjectHideFlags: 0
