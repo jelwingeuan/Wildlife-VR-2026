@@ -10,12 +10,23 @@ public class TrunkFadeAfterGrab : MonoBehaviour
     public float fadeDuration = 5f;
     public bool disappearWhenCleared = true;
 
+    [Header("Lift Sound")]
+    [SerializeField] private AudioSource audioSource;
+    [SerializeField] private AudioClip liftSFX;
+
+    [Range(0f, 1f)]
+    [SerializeField] private float liftVolume = 1f;
+
     private bool isClearing = false;
     private Renderer[] renderers;
 
     private void Start()
     {
         renderers = GetComponentsInChildren<Renderer>();
+
+        // Automatically find the Audio Source if it was not assigned.
+        if (audioSource == null)
+            audioSource = GetComponent<AudioSource>();
     }
 
     public void StartFadeAndClear()
@@ -24,16 +35,29 @@ public class TrunkFadeAfterGrab : MonoBehaviour
             return;
 
         isClearing = true;
+
+        // Play the trunk-lifting sound once.
+        if (audioSource != null && liftSFX != null)
+        {
+            audioSource.PlayOneShot(liftSFX, liftVolume);
+        }
+        else
+        {
+            Debug.LogWarning("[Trunk] Audio Source or Lift SFX is not assigned.");
+        }
+
         StartCoroutine(FadeRoutine());
     }
 
     private IEnumerator FadeRoutine()
     {
-        Debug.Log("[Trunk] Grabbed. Fading for " + fadeDuration + " seconds.");
+        Debug.Log("[Trunk] Grabbed. Fading for " 
+                  + fadeDuration + " seconds.");
 
         float timer = 0f;
 
-        Material[][] allMaterials = new Material[renderers.Length][];
+        Material[][] allMaterials =
+            new Material[renderers.Length][];
 
         for (int i = 0; i < renderers.Length; i++)
         {
@@ -48,7 +72,9 @@ public class TrunkFadeAfterGrab : MonoBehaviour
         while (timer < fadeDuration)
         {
             timer += Time.deltaTime;
-            float alpha = Mathf.Lerp(1f, 0f, timer / fadeDuration);
+
+            float alpha =
+                Mathf.Lerp(1f, 0f, timer / fadeDuration);
 
             foreach (Material[] mats in allMaterials)
             {
@@ -73,9 +99,14 @@ public class TrunkFadeAfterGrab : MonoBehaviour
         }
 
         if (mission != null)
+        {
             mission.OnTrunkCleared(gameObject);
+        }
         else
-            Debug.LogWarning("[Trunk] Mission is not assigned.");
+        {
+            Debug.LogWarning(
+                "[Trunk] Mission is not assigned.");
+        }
 
         if (disappearWhenCleared)
             gameObject.SetActive(false);
