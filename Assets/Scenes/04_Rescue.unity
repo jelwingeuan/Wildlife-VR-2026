@@ -6568,8 +6568,8 @@ MonoBehaviour:
   mission: {fileID: 1862320455}
   fadeDuration: 2
   disappearWhenCleared: 1
-  audioSource: {fileID: 0}
-  liftSFX: {fileID: 0}
+  audioSource: {fileID: 531172016}
+  liftSFX: {fileID: 8300000, guid: 87a80e931021d43bd955e32be057e737, type: 3}
   liftVolume: 1
 --- !u!114 &531172014
 MonoBehaviour:
@@ -6751,8 +6751,8 @@ AudioSource:
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 0}
-  m_Resource: {fileID: 0}
-  m_PlayOnAwake: 1
+  m_Resource: {fileID: 8300000, guid: 87a80e931021d43bd955e32be057e737, type: 3}
+  m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
   Loop: 0
@@ -13639,8 +13639,8 @@ MonoBehaviour:
   mission: {fileID: 1862320455}
   fadeDuration: 2
   disappearWhenCleared: 1
-  audioSource: {fileID: 0}
-  liftSFX: {fileID: 0}
+  audioSource: {fileID: 1079400970}
+  liftSFX: {fileID: 8300000, guid: 87a80e931021d43bd955e32be057e737, type: 3}
   liftVolume: 1
 --- !u!114 &1079400968
 MonoBehaviour:
@@ -13822,8 +13822,8 @@ AudioSource:
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 0}
-  m_Resource: {fileID: 0}
-  m_PlayOnAwake: 1
+  m_Resource: {fileID: 8300000, guid: 87a80e931021d43bd955e32be057e737, type: 3}
+  m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
   Loop: 0
