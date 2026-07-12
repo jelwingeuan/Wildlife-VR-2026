@@ -7113,6 +7113,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::VRSceneTeleporter
   sceneToLoad: 04_Restore
   promptCanvas: {fileID: 215136620}
+  audioSource: {fileID: 0}
+  alertSFX: {fileID: 0}
 --- !u!65 &530197494
 BoxCollider:
   m_ObjectHideFlags: 0
