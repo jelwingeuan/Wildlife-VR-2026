@@ -13849,6 +13849,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::VRSceneTeleporter
   sceneToLoad: 05_Free
   promptCanvas: {fileID: 1795971046}
+  teleportAudioSource: {fileID: 0}
+  teleportSFX: {fileID: 0}
+  teleportDelay: 1
 --- !u!65 &1538352586
 BoxCollider:
   m_ObjectHideFlags: 0
