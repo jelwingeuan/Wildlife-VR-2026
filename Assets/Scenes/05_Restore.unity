@@ -3407,7 +3407,7 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 6.1029606, y: 19.19, z: 5.13982}
+  m_Size: {x: 8.46, y: 26.19, z: 6.4}
   m_Center: {x: -25.35, y: -2.62, z: -6.739998}
 --- !u!4 &364261818
 Transform:
@@ -3836,7 +3836,7 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 4.9246755, y: 34.5, z: 5.56383}
+  m_Size: {x: 8.46, y: 26.19, z: 6.4}
   m_Center: {x: -7.28, y: -1.26, z: -12.05}
 --- !u!1 &421625225
 GameObject:
@@ -5930,7 +5930,7 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 4.72805, y: 17.6, z: 6.845708}
+  m_Size: {x: 8.46, y: 26.19, z: 6.4}
   m_Center: {x: -5.79, y: -2.3, z: -12.75}
 --- !u!4 &609542434
 Transform:
@@ -6185,7 +6185,7 @@ GameObject:
   - component: {fileID: 635526373}
   - component: {fileID: 635526372}
   m_Layer: 0
-  m_Name: Planting Zone 3 (1)
+  m_Name: Planting Zone 11
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -6242,7 +6242,7 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 4.72805, y: 17.6, z: 6.845708}
+  m_Size: {x: 8.46, y: 26.19, z: 6.4}
   m_Center: {x: -5.79, y: -2.3, z: -12.75}
 --- !u!1001 &635556120
 PrefabInstance:
@@ -9367,7 +9367,7 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 4.9246755, y: 34.5, z: 5.56383}
+  m_Size: {x: 8.46, y: 26.19, z: 6.4}
   m_Center: {x: -7.28, y: -1.26, z: -12.05}
 --- !u!1001 &912208878
 PrefabInstance:
@@ -10205,7 +10205,7 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 6.143054, y: 30.43, z: 7.532357}
+  m_Size: {x: 8.46, y: 26.19, z: 6.4}
   m_Center: {x: -10.92, y: -2.69, z: -19.69}
 --- !u!1001 &1001333610
 PrefabInstance:
@@ -10928,7 +10928,7 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 6.1029606, y: 19.19, z: 5.13982}
+  m_Size: {x: 8.46, y: 26.19, z: 6.4}
   m_Center: {x: -25.35, y: -2.62, z: -6.739998}
 --- !u!1 &1094900449
 GameObject:
@@ -16860,7 +16860,7 @@ GameObject:
   - component: {fileID: 1638488712}
   - component: {fileID: 1638488711}
   m_Layer: 0
-  m_Name: Planting Zone 7 (1)
+  m_Name: Planting Zone 10
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -16917,8 +16917,8 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 4.9246755, y: 34.5, z: 5.56383}
-  m_Center: {x: -7.28, y: -1.26, z: -12.05}
+  m_Size: {x: 8.46, y: 26.19, z: 6.4}
+  m_Center: {x: -8.97, y: -1.62, z: -12.05}
 --- !u!1001 &1654349366
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -17418,7 +17418,7 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 6.143054, y: 30.43, z: 7.532357}
+  m_Size: {x: 8.46, y: 26.19, z: 6.4}
   m_Center: {x: -10.92, y: -2.69, z: -19.69}
 --- !u!4 &1702153384
 Transform:
@@ -19187,7 +19187,7 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 6.1029606, y: 19.19, z: 5.13982}
+  m_Size: {x: 8.46, y: 26.19, z: 6.4}
   m_Center: {x: -25.35, y: -2.62, z: -6.739998}
 --- !u!1 &1816834822
 GameObject:
@@ -22344,7 +22344,7 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 4.9246755, y: 34.5, z: 5.56383}
+  m_Size: {x: 8.46, y: 26.19, z: 6.4}
   m_Center: {x: -7.28, y: -1.26, z: -12.05}
 --- !u!4 &2083294882
 Transform:
