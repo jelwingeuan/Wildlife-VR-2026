@@ -1,77 +1,53 @@
 using UnityEngine;
 
-public class FireTarget : MonoBehaviour
+[RequireComponent(typeof(AudioSource))]
+public class FireSFXManager : MonoBehaviour
 {
-    [Header("Fire Setup")]
-    [Tooltip("Drag the fire's particle system here")]
-    public ParticleSystem fireParticles;
-
-    [Header("Fire Sound Manager")]
-    [SerializeField] private FireSoundManager fireSoundManager;
-
-    private bool hasBeenExtinguished = false;
+    private AudioSource fireAudio;
+    private FireTarget[] fireTargets;
 
     private void Start()
     {
-        // Automatically find the manager on the Fires parent
-        if (fireSoundManager == null)
-        {
-            fireSoundManager = GetComponentInParent<FireSoundManager>();
-        }
+        fireAudio = GetComponent<AudioSource>();
 
-        // Tell the manager that this fire is currently active
-        if (fireSoundManager != null)
+        // Find every FireTarget under the parent "Fires" object
+        fireTargets = GetComponentsInChildren<FireTarget>(true);
+
+        // Start the looping fire sound
+        fireAudio.loop = true;
+        fireAudio.playOnAwake = false;
+
+        if (fireAudio.clip != null && fireTargets.Length > 0)
         {
-            fireSoundManager.RegisterFire();
-        }
-        else
-        {
-            Debug.LogWarning(
-                "[FireTarget] No FireSoundManager found for " + gameObject.name
-            );
+            fireAudio.Play();
         }
     }
 
-    private void OnParticleCollision(GameObject other)
+    private void Update()
     {
-        if (other.name.Contains("Water Stream"))
+        bool anyFireStillBurning = false;
+
+        foreach (FireTarget fire in fireTargets)
         {
-            Extinguish();
-        }
-    }
+            // Destroyed fires become null automatically
+            if (fire == null)
+                continue;
 
-    public void Extinguish()
-    {
-        // Prevent water particles from triggering this repeatedly
-        if (hasBeenExtinguished)
-            return;
-
-        hasBeenExtinguished = true;
-
-        // Stop producing new fire particles
-        if (fireParticles != null)
-        {
-            fireParticles.Stop(
-                true,
-                ParticleSystemStopBehavior.StopEmitting
-            );
+            if (fire.fireParticles != null &&
+                fire.fireParticles.isEmitting)
+            {
+                anyFireStillBurning = true;
+                break;
+            }
         }
 
-        // Stop receiving water collision messages
-        Collider col = GetComponent<Collider>();
-
-        if (col != null)
+        // Stop the sound when every fire is extinguished
+        if (!anyFireStillBurning)
         {
-            col.enabled = false;
-        }
+            fireAudio.Stop();
 
-        // Reduce the active fire count
-        if (fireSoundManager != null)
-        {
-            fireSoundManager.NotifyFireExtinguished();
+            // No need to keep checking after all fires are gone
+            enabled = false;
         }
-
-        // Allow the remaining particles or smoke to fade
-        Destroy(gameObject, 2f);
     }
 }
