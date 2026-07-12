@@ -137,6 +137,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::FireTarget
   fireParticles: {fileID: 2998959}
+  fireSoundManager: {fileID: 0}
 --- !u!65 &2998957
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -201,6 +202,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::FireTarget
   fireParticles: {fileID: 123374036}
+  fireSoundManager: {fileID: 0}
 --- !u!65 &123374034
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -842,6 +844,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::FireTarget
   fireParticles: {fileID: 326012769}
+  fireSoundManager: {fileID: 0}
 --- !u!65 &326012767
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -1259,6 +1262,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::FireTarget
   fireParticles: {fileID: 452386320}
+  fireSoundManager: {fileID: 0}
 --- !u!65 &452386322
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -1455,6 +1459,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::FireTarget
   fireParticles: {fileID: 504160807}
+  fireSoundManager: {fileID: 0}
 --- !u!65 &504160805
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -2304,6 +2309,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::VRSceneTeleporter
   sceneToLoad: 01_Tapir_Rescue_Zone
   promptCanvas: {fileID: 1128235165}
+  teleportAudioSource: {fileID: 0}
+  teleportSFX: {fileID: 0}
+  teleportDelay: 1
 --- !u!1 &805432724
 GameObject:
   m_ObjectHideFlags: 0
@@ -5559,6 +5567,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::FireTarget
   fireParticles: {fileID: 1465264781}
+  fireSoundManager: {fileID: 0}
 --- !u!65 &1465264779
 BoxCollider:
   m_ObjectHideFlags: 0
