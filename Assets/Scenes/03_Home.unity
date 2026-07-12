@@ -7118,7 +7118,7 @@ MonoBehaviour:
   sceneToLoad: 04_Restore
   promptCanvas: {fileID: 215136620}
   teleportAudioSource: {fileID: 530197499}
-  teleportSFX: {fileID: 8300000, guid: 2095870a78b0d4bd9bdbb586b03be7bd, type: 3}
+  teleportSfx: {fileID: 8300000, guid: 2095870a78b0d4bd9bdbb586b03be7bd, type: 3}
   teleportDelay: 1.5
   teleportVolume: 1
 --- !u!65 &530197494
@@ -7251,7 +7251,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 0}
   m_Resource: {fileID: 8300000, guid: 2095870a78b0d4bd9bdbb586b03be7bd, type: 3}
-  m_PlayOnAwake: 1
+  m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
   Loop: 0

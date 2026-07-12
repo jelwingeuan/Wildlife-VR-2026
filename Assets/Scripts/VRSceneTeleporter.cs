@@ -3,7 +3,6 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.XR;
 
-[RequireComponent(typeof(AudioSource))]
 public class VRSceneTeleporter : MonoBehaviour
 {
     [Header("Scene Destination")]
@@ -12,26 +11,31 @@ public class VRSceneTeleporter : MonoBehaviour
     [Header("UI Prompt")]
     public GameObject promptCanvas;
 
-    [Header("Teleport Audio")]
-    [Tooltip("Audio Source attached to the TeleportPad")]
-    public AudioSource teleportAudioSource;
+    [Header("Teleport Transition Audio")]
+    [SerializeField] private AudioSource teleportAudioSource;
+    [SerializeField] private AudioClip teleportSfx;
 
-    [Tooltip("Sound played when teleportation begins")]
-    public AudioClip teleportSFX;
+    [Tooltip("Minimum delay before loading the next scene.")]
+    [SerializeField, Min(0f)] private float teleportDelay = 1.2f;
 
-    [Tooltip("Time between playing the sound and loading the scene")]
-    [Min(0f)]
-    public float teleportDelay = 1.5f;
+    [SerializeField, Range(0f, 1f)] private float teleportVolume = 1f;
 
-    [Range(0f, 1f)]
-    public float teleportVolume = 1f;
+    private bool playerIsOnPad;
+    private bool isTeleporting;
 
-    private bool playerIsOnPad = false;
-    private bool isTeleporting = false;
+    // Prevents the buttons from triggering repeatedly while held.
+    private bool wasXPressed;
+    private bool wasYPressed;
 
-    // Prevents buttons from triggering continuously while held.
-    private bool wasXPressed = false;
-    private bool wasYPressed = false;
+    private void Awake()
+    {
+        // Automatically finds an Audio Source on the TeleportPad
+        // if one was not manually assigned.
+        if (teleportAudioSource == null)
+        {
+            teleportAudioSource = GetComponent<AudioSource>();
+        }
+    }
 
     private void Start()
     {
@@ -39,20 +43,12 @@ public class VRSceneTeleporter : MonoBehaviour
         {
             promptCanvas.SetActive(false);
         }
-
-        // Automatically find the Audio Source on this TeleportPad.
-        if (teleportAudioSource == null)
-        {
-            teleportAudioSource = GetComponent<AudioSource>();
-        }
     }
 
     private void Update()
     {
         if (!playerIsOnPad || isTeleporting)
-        {
             return;
-        }
 
         InputDevice leftHand =
             InputDevices.GetDeviceAtXRNode(XRNode.LeftHand);
@@ -80,9 +76,7 @@ public class VRSceneTeleporter : MonoBehaviour
         {
             if (isYPressed && !wasYPressed)
             {
-                Debug.Log(
-                    ">>> Y Pushed! Canceling teleport... <<<");
-
+                Debug.Log(">>> Y Pushed! Canceling... <<<");
                 HidePrompt();
             }
 
@@ -92,38 +86,51 @@ public class VRSceneTeleporter : MonoBehaviour
 
     private IEnumerator TeleportRoutine()
     {
+        if (isTeleporting)
+            yield break;
+
+        if (string.IsNullOrWhiteSpace(sceneToLoad))
+        {
+            Debug.LogError(
+                "[VRSceneTeleporter] Scene To Load is empty.");
+
+            yield break;
+        }
+
         isTeleporting = true;
         playerIsOnPad = false;
 
+        // Hide the confirmation UI.
         if (promptCanvas != null)
         {
             promptCanvas.SetActive(false);
         }
 
-        // Play the teleport sound.
-        if (teleportAudioSource != null && teleportSFX != null)
+        // Play teleport transition sound.
+        if (teleportAudioSource != null && teleportSfx != null)
         {
             teleportAudioSource.PlayOneShot(
-                teleportSFX,
+                teleportSfx,
                 teleportVolume);
         }
         else
         {
             Debug.LogWarning(
-                "[TeleportPad] Teleport Audio Source or SFX is missing.");
+                "[VRSceneTeleporter] Teleport Audio Source " +
+                "or Teleport SFX has not been assigned.");
         }
 
-        // Wait so the sound can play before the current scene disappears.
-        yield return new WaitForSeconds(teleportDelay);
+        // Wait before changing scene so the sound can play.
+        float waitTime = teleportDelay;
 
-        if (string.IsNullOrWhiteSpace(sceneToLoad))
+        if (teleportSfx != null)
         {
-            Debug.LogError(
-                "[TeleportPad] No destination scene has been entered.");
-
-            isTeleporting = false;
-            yield break;
+            waitTime = Mathf.Max(
+                teleportDelay,
+                teleportSfx.length);
         }
+
+        yield return new WaitForSecondsRealtime(waitTime);
 
         SceneManager.LoadScene(sceneToLoad);
     }
@@ -152,8 +159,6 @@ public class VRSceneTeleporter : MonoBehaviour
     private void HidePrompt()
     {
         playerIsOnPad = false;
-        wasXPressed = false;
-        wasYPressed = false;
 
         if (promptCanvas != null)
         {
