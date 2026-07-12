@@ -8164,7 +8164,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::WaterCannon
   waterParticles: {fileID: 432786244}
-  sprayAudio: {fileID: 0}
+  sprayAudio: {fileID: 617108007}
   controllerNode: 5
 --- !u!114 &617108004
 MonoBehaviour:
@@ -8355,11 +8355,11 @@ AudioSource:
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 0}
-  m_Resource: {fileID: 0}
-  m_PlayOnAwake: 1
+  m_Resource: {fileID: 8300000, guid: b13e22d14a9434be0af15d91687331c9, type: 3}
+  m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
-  Loop: 0
+  Loop: 1
   Mute: 0
   Spatialize: 0
   SpatializePostEffects: 0
