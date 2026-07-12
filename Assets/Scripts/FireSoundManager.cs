@@ -1,3 +1,4 @@
+using System.Collections.Generic;
 using UnityEngine;
 
 [RequireComponent(typeof(AudioSource))]
@@ -6,7 +7,10 @@ public class FireSoundManager : MonoBehaviour
     [Header("Fire Audio")]
     [SerializeField] private AudioSource fireAudioSource;
 
-    private int activeFireCount = 0;
+    private int remainingFires;
+
+    // Prevents the same fire from being counted twice
+    private readonly HashSet<int> extinguishedFireIDs = new();
 
     private void Awake()
     {
@@ -15,35 +19,54 @@ public class FireSoundManager : MonoBehaviour
             fireAudioSource = GetComponent<AudioSource>();
         }
 
-        if (fireAudioSource != null)
-        {
-            fireAudioSource.loop = true;
-            fireAudioSource.playOnAwake = false;
-        }
+        fireAudioSource.loop = true;
+        fireAudioSource.playOnAwake = false;
     }
 
-    public void RegisterFire()
+    private void Start()
     {
-        activeFireCount++;
+        // Automatically count all active FireTargets under the Fires parent
+        FireTarget[] fires = GetComponentsInChildren<FireTarget>(false);
+        remainingFires = fires.Length;
 
-        // Start the fire sound when at least one fire is burning
-        if (fireAudioSource != null && !fireAudioSource.isPlaying)
+        Debug.Log("[FireSoundManager] Active fires found: " + remainingFires);
+
+        if (remainingFires > 0 &&
+            fireAudioSource != null &&
+            fireAudioSource.clip != null)
         {
             fireAudioSource.Play();
         }
     }
 
-    public void NotifyFireExtinguished()
+    public void NotifyFireExtinguished(FireTarget fire)
     {
-        activeFireCount = Mathf.Max(0, activeFireCount - 1);
+        if (fire == null)
+            return;
 
-        Debug.Log("[Fire Sound] Remaining fires: " + activeFireCount);
+        int fireID = fire.GetInstanceID();
 
-        // Stop only after every fire has been extinguished
-        if (activeFireCount == 0 && fireAudioSource != null)
+        // Stop one fire from reporting several times
+        if (!extinguishedFireIDs.Add(fireID))
+            return;
+
+        remainingFires = Mathf.Max(0, remainingFires - 1);
+
+        Debug.Log(
+            "[FireSoundManager] Fire extinguished. Remaining: " +
+            remainingFires
+        );
+
+        if (remainingFires == 0)
         {
-            fireAudioSource.Stop();
-            Debug.Log("[Fire Sound] All fires extinguished. Audio stopped.");
+            if (fireAudioSource != null)
+            {
+                fireAudioSource.Stop();
+            }
+
+            Debug.Log(
+                "[FireSoundManager] All fires extinguished. Sound stopped."
+            );
         }
     }
 }
