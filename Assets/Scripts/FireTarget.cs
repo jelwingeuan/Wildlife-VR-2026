@@ -3,14 +3,37 @@ using UnityEngine;
 public class FireTarget : MonoBehaviour
 {
     [Header("Fire Setup")]
-    [Tooltip("Drag the Fire's particle system here")]
+    [Tooltip("Drag the fire's particle system here")]
     public ParticleSystem fireParticles;
 
-    // Unity automatically runs this function when a particle with 
-    // "Send Collision Messages" enabled hits this object's collider.
-    void OnParticleCollision(GameObject other)
+    [Header("Fire Sound Manager")]
+    [SerializeField] private FireSoundManager fireSoundManager;
+
+    private bool hasBeenExtinguished = false;
+
+    private void Start()
     {
-        // Check if the object hitting us is the water stream
+        // Automatically find the manager on the Fires parent
+        if (fireSoundManager == null)
+        {
+            fireSoundManager = GetComponentInParent<FireSoundManager>();
+        }
+
+        // Tell the manager that this fire is currently active
+        if (fireSoundManager != null)
+        {
+            fireSoundManager.RegisterFire();
+        }
+        else
+        {
+            Debug.LogWarning(
+                "[FireTarget] No FireSoundManager found for " + gameObject.name
+            );
+        }
+    }
+
+    private void OnParticleCollision(GameObject other)
+    {
         if (other.name.Contains("Water Stream"))
         {
             Extinguish();
@@ -19,21 +42,36 @@ public class FireTarget : MonoBehaviour
 
     public void Extinguish()
     {
-        // 1. Stop the fire particles from emitting
+        // Prevent water particles from triggering this repeatedly
+        if (hasBeenExtinguished)
+            return;
+
+        hasBeenExtinguished = true;
+
+        // Stop producing new fire particles
         if (fireParticles != null)
         {
-            fireParticles.Stop();
+            fireParticles.Stop(
+                true,
+                ParticleSystemStopBehavior.StopEmitting
+            );
         }
 
-        // 2. Turn off the collider so we don't keep registering hits
+        // Stop receiving water collision messages
         Collider col = GetComponent<Collider>();
+
         if (col != null)
         {
             col.enabled = false;
         }
 
-        // 3. Optional: Destroy the fire game object entirely after 2 seconds 
-        // to give the remaining smoke/particles time to naturally fade away.
+        // Reduce the active fire count
+        if (fireSoundManager != null)
+        {
+            fireSoundManager.NotifyFireExtinguished();
+        }
+
+        // Allow the remaining particles or smoke to fade
         Destroy(gameObject, 2f);
     }
 }
