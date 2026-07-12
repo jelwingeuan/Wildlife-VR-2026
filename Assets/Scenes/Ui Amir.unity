@@ -2852,7 +2852,7 @@ MonoBehaviour:
   m_HoverEntered:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 224860853}
+      - m_Target: {fileID: 1434305679}
         m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
         m_MethodName: SetActive
         m_Mode: 6
@@ -2867,7 +2867,7 @@ MonoBehaviour:
   m_HoverExited:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 224860853}
+      - m_Target: {fileID: 1434305679}
         m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
         m_MethodName: SetActive
         m_Mode: 6
@@ -2932,7 +2932,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &1434305680
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3342,7 +3342,7 @@ MonoBehaviour:
   m_HoverEntered:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1434305679}
+      - m_Target: {fileID: 224860853}
         m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
         m_MethodName: SetActive
         m_Mode: 6
@@ -3357,7 +3357,7 @@ MonoBehaviour:
   m_HoverExited:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1434305679}
+      - m_Target: {fileID: 224860853}
         m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
         m_MethodName: SetActive
         m_Mode: 6
@@ -5383,9 +5383,9 @@ SceneRoots:
   - {fileID: 767858076}
   - {fileID: 283067748}
   - {fileID: 1525922326}
-  - {fileID: 1434305683}
-  - {fileID: 1384106483}
   - {fileID: 224860857}
+  - {fileID: 1384106483}
+  - {fileID: 1434305683}
   - {fileID: 550828609}
   - {fileID: 70136478}
   - {fileID: 1623829244}
