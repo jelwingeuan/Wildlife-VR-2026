@@ -5616,6 +5616,9 @@ MonoBehaviour:
   mission: {fileID: 1954163699}
   fadeDuration: 2
   disappearWhenCleared: 1
+  audioSource: {fileID: 0}
+  liftSFX: {fileID: 0}
+  liftVolume: 1
 --- !u!114 &461300916
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7114,8 +7117,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::VRSceneTeleporter
   sceneToLoad: 04_Restore
   promptCanvas: {fileID: 215136620}
-  audioSource: {fileID: 530197499}
-  alertSFX: {fileID: 8300000, guid: 3763c45f20a7b47f39651ca07025fcca, type: 3}
+  teleportAudioSource: {fileID: 530197499}
+  teleportSFX: {fileID: 8300000, guid: 2095870a78b0d4bd9bdbb586b03be7bd, type: 3}
+  teleportDelay: 1.5
+  teleportVolume: 1
 --- !u!65 &530197494
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -7245,7 +7250,7 @@ AudioSource:
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 0}
-  m_Resource: {fileID: 8300000, guid: 3763c45f20a7b47f39651ca07025fcca, type: 3}
+  m_Resource: {fileID: 8300000, guid: 2095870a78b0d4bd9bdbb586b03be7bd, type: 3}
   m_PlayOnAwake: 1
   m_Volume: 1
   m_Pitch: 1
@@ -19450,6 +19455,9 @@ MonoBehaviour:
   mission: {fileID: 1954163699}
   fadeDuration: 2
   disappearWhenCleared: 1
+  audioSource: {fileID: 0}
+  liftSFX: {fileID: 0}
+  liftVolume: 1
 --- !u!114 &1565886772
 MonoBehaviour:
   m_ObjectHideFlags: 0
