@@ -981,7 +981,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::FireTarget
   fireParticles: {fileID: 49846414}
-  fireSoundManager: {fileID: 0}
 --- !u!65 &49846416
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -3972,7 +3971,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::FireTarget
   fireParticles: {fileID: 244600294}
-  fireSoundManager: {fileID: 0}
 --- !u!65 &244600296
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -4867,7 +4865,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::FireTarget
   fireParticles: {fileID: 360288425}
-  fireSoundManager: {fileID: 0}
 --- !u!65 &360288427
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -7472,7 +7469,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::FireTarget
   fireParticles: {fileID: 517665697}
-  fireSoundManager: {fileID: 0}
 --- !u!65 &517665699
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -8675,7 +8671,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::FireTarget
   fireParticles: {fileID: 577843266}
-  fireSoundManager: {fileID: 0}
 --- !u!65 &577843268
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -9535,7 +9530,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::FireTarget
   fireParticles: {fileID: 634356991}
-  fireSoundManager: {fileID: 0}
 --- !u!65 &634356993
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -11150,7 +11144,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::FireTarget
   fireParticles: {fileID: 827345715}
-  fireSoundManager: {fileID: 0}
 --- !u!65 &827345717
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -11366,6 +11359,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 9be1ddde8e09f4840a771843e76fa83e, type: 3}
       insertIndex: -1
       addedObject: {fileID: 831207767}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 9be1ddde8e09f4840a771843e76fa83e, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 831207770}
   m_SourcePrefab: {fileID: 100100000, guid: 9be1ddde8e09f4840a771843e76fa83e, type: 3}
 --- !u!4 &831207765 stripped
 Transform:
@@ -11398,6 +11394,28 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 0.040252212, y: 0.040252212, z: 0.0042978036}
   m_Center: {x: 0.000000014600034, y: -1.398683e-18, z: 0.0061489176}
+--- !u!64 &831207770
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 831207766}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 5
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 4484052843275181868, guid: 9be1ddde8e09f4840a771843e76fa83e, type: 3}
 --- !u!1 &832835642
 GameObject:
   m_ObjectHideFlags: 0
@@ -12030,7 +12048,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::FireTarget
   fireParticles: {fileID: 862586313}
-  fireSoundManager: {fileID: 0}
 --- !u!65 &862586315
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -12967,7 +12984,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::FireTarget
   fireParticles: {fileID: 946204287}
-  fireSoundManager: {fileID: 0}
 --- !u!65 &946204289
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -13749,7 +13765,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::FireTarget
   fireParticles: {fileID: 1012875147}
-  fireSoundManager: {fileID: 0}
 --- !u!1001 &1014446238
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -14386,7 +14401,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::FireTarget
   fireParticles: {fileID: 1026463936}
-  fireSoundManager: {fileID: 0}
 --- !u!65 &1026463938
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -20808,7 +20822,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::FireTarget
   fireParticles: {fileID: 1539907437}
-  fireSoundManager: {fileID: 0}
 --- !u!65 &1539907439
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -22024,7 +22037,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::FireTarget
   fireParticles: {fileID: 1610107379}
-  fireSoundManager: {fileID: 0}
 --- !u!65 &1610107381
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -22371,7 +22383,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::FireTarget
   fireParticles: {fileID: 1621709857}
-  fireSoundManager: {fileID: 0}
 --- !u!65 &1621709859
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -23315,7 +23326,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::FireTarget
   fireParticles: {fileID: 1678493757}
-  fireSoundManager: {fileID: 0}
 --- !u!65 &1678493759
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -25694,7 +25704,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::FireTarget
   fireParticles: {fileID: 1865800406}
-  fireSoundManager: {fileID: 0}
 --- !u!65 &1865800408
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -26001,7 +26010,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::FireTarget
   fireParticles: {fileID: 1874999797}
-  fireSoundManager: {fileID: 0}
 --- !u!65 &1874999799
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -26691,7 +26699,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::FireTarget
   fireParticles: {fileID: 1911209200}
-  fireSoundManager: {fileID: 0}
 --- !u!65 &1911209202
 BoxCollider:
   m_ObjectHideFlags: 0
