@@ -15963,7 +15963,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &1552865942
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -17957,7 +17957,7 @@ MonoBehaviour:
   m_OriginBaseGameObject: {fileID: 1722406805}
   m_CameraFloorOffsetObject: {fileID: 722432768}
   m_RequestedTrackingOriginMode: 1
-  m_CameraYOffset: 2.8
+  m_CameraYOffset: 2.3
 --- !u!54 &1722406808
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -22038,7 +22038,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::WalkThroughUIPopup
   popupUI: {fileID: 1552865941}
-  displayDuration: 30
+  displayDuration: 10
   showOnlyOnce: 1
 --- !u!1001 &2072161186
 PrefabInstance:
