@@ -1185,6 +1185,7 @@ GameObject:
   - component: {fileID: 472436839}
   - component: {fileID: 472436838}
   - component: {fileID: 472436837}
+  - component: {fileID: 472436840}
   m_Layer: 0
   m_Name: Continue
   m_TagString: Untagged
@@ -1255,7 +1256,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 472436838}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1224837816}
+        m_TargetAssemblyTypeName: 
+        m_MethodName: 
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: 
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &472436838
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1294,6 +1307,19 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 472436835}
   m_CullTransparentMesh: 1
+--- !u!114 &472436840
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 472436835}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 72db3225941b650459b59360205e5e50, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::LeftControllerMenuToggle
+  menuRoot: {fileID: 0}
 --- !u!1001 &501868677
 PrefabInstance:
   m_ObjectHideFlags: 0
