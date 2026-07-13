@@ -16364,9 +16364,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8e75d833a7c744bca8d2b9e678c4de73, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::RandomAnimalVoice
-  animalVoiceClips: []
-  minimumDelay: 8
-  maximumDelay: 20
+  animalVoiceClips:
+  - {fileID: 8300000, guid: 9146704dcc26b41f9b901d3a1902b93a, type: 3}
+  minimumDelay: 10
+  maximumDelay: 25
   volume: 0.7
 --- !u!82 &1663746982
 AudioSource:
@@ -16379,8 +16380,8 @@ AudioSource:
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 0}
-  m_Resource: {fileID: 0}
-  m_PlayOnAwake: 1
+  m_Resource: {fileID: 8300000, guid: 9146704dcc26b41f9b901d3a1902b93a, type: 3}
+  m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
   Loop: 0
