@@ -5,26 +5,17 @@ using UnityEngine;
 public class RandomAnimalVoice : MonoBehaviour
 {
     [Header("Animal Voice Clips")]
-    [Tooltip("Add several different animal sounds here.")]
     public AudioClip[] animalVoiceClips;
 
-    [Header("Random Timing")]
-    [Tooltip("Minimum number of seconds before the animal makes a sound.")]
+    [Header("Random Delay")]
     public float minimumDelay = 8f;
-
-    [Tooltip("Maximum number of seconds before the animal makes a sound.")]
     public float maximumDelay = 20f;
 
-    [Header("Voice Settings")]
+    [Header("Sound Settings")]
     [Range(0f, 1f)]
-    public float volume = 0.8f;
-
-    [Tooltip("Adds a small pitch variation so repeated sounds feel more natural.")]
-    public Vector2 pitchRange = new Vector2(0.95f, 1.05f);
+    public float volume = 0.7f;
 
     private AudioSource audioSource;
-    private Coroutine voiceRoutine;
-    private int previousClipIndex = -1;
 
     private void Awake()
     {
@@ -36,60 +27,23 @@ public class RandomAnimalVoice : MonoBehaviour
 
     private void OnEnable()
     {
-        voiceRoutine = StartCoroutine(PlayRandomVoices());
+        StartCoroutine(RandomVoiceRoutine());
     }
 
-    private void OnDisable()
-    {
-        if (voiceRoutine != null)
-        {
-            StopCoroutine(voiceRoutine);
-            voiceRoutine = null;
-        }
-    }
-
-    private IEnumerator PlayRandomVoices()
+    private IEnumerator RandomVoiceRoutine()
     {
         while (true)
         {
-            // Wait for a random amount of time.
             float delay = Random.Range(minimumDelay, maximumDelay);
             yield return new WaitForSeconds(delay);
 
-            if (animalVoiceClips == null || animalVoiceClips.Length == 0)
-                continue;
+            if (animalVoiceClips != null && animalVoiceClips.Length > 0)
+            {
+                AudioClip randomClip =
+                    animalVoiceClips[Random.Range(0, animalVoiceClips.Length)];
 
-            int randomIndex = GetRandomClipIndex();
-            previousClipIndex = randomIndex;
-
-            audioSource.pitch = Random.Range(
-                pitchRange.x,
-                pitchRange.y
-            );
-
-            audioSource.PlayOneShot(
-                animalVoiceClips[randomIndex],
-                volume
-            );
-
-            // Wait until the current animal call finishes.
-            yield return new WaitWhile(() => audioSource.isPlaying);
+                audioSource.PlayOneShot(randomClip, volume);
+            }
         }
-    }
-
-    private int GetRandomClipIndex()
-    {
-        if (animalVoiceClips.Length == 1)
-            return 0;
-
-        int selectedIndex;
-
-        do
-        {
-            selectedIndex = Random.Range(0, animalVoiceClips.Length);
-        }
-        while (selectedIndex == previousClipIndex);
-
-        return selectedIndex;
     }
 }
