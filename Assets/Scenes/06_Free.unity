@@ -6772,9 +6772,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8e75d833a7c744bca8d2b9e678c4de73, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::RandomAnimalVoice
-  animalVoiceClips: []
-  minimumDelay: 8
-  maximumDelay: 20
+  animalVoiceClips:
+  - {fileID: 8300000, guid: a00c1bbdb6a7c4d9da5174b7010c45f6, type: 3}
+  minimumDelay: 15
+  maximumDelay: 35
   volume: 0.7
 --- !u!82 &716451747
 AudioSource:
@@ -6787,8 +6788,8 @@ AudioSource:
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 0}
-  m_Resource: {fileID: 0}
-  m_PlayOnAwake: 1
+  m_Resource: {fileID: 8300000, guid: a00c1bbdb6a7c4d9da5174b7010c45f6, type: 3}
+  m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
   Loop: 0
@@ -6796,9 +6797,9 @@ AudioSource:
   Spatialize: 0
   SpatializePostEffects: 0
   Priority: 128
-  DopplerLevel: 1
-  MinDistance: 1
-  MaxDistance: 500
+  DopplerLevel: 0
+  MinDistance: 3
+  MaxDistance: 25
   Pan2D: 0
   rolloffMode: 0
   BypassEffects: 0
