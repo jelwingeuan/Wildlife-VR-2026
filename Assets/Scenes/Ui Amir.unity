@@ -5222,14 +5222,14 @@ RectTransform:
   m_GameObject: {fileID: 1695980976}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
+  m_LocalScale: {x: 4.24, y: 1.4442259, z: 1.4442259}
+  m_ConstrainProportionsScale: 1
   m_Children: []
   m_Father: {fileID: 1856050128}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 0}
+  m_AnchoredPosition: {x: -413, y: 271}
   m_SizeDelta: {x: 70, y: 69}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1695980978
@@ -5254,8 +5254,8 @@ MonoBehaviour:
   m_Transition: 1
   m_Colors:
     m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
-    m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
-    m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
+    m_HighlightedColor: {r: 1, g: 1, b: 1, a: 1}
+    m_PressedColor: {r: 1, g: 1, b: 1, a: 1}
     m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
     m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
     m_ColorMultiplier: 1
@@ -5275,7 +5275,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1695980979}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1856050129}
+        m_TargetAssemblyTypeName: SettingsPopupMenu, Assembly-CSharp
+        m_MethodName: OpenSettings
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1695980979
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6066,6 +6078,7 @@ GameObject:
   - component: {fileID: 1856050127}
   - component: {fileID: 1856050126}
   - component: {fileID: 1856050125}
+  - component: {fileID: 1856050129}
   m_Layer: 5
   m_Name: SettingsUI
   m_TagString: Untagged
@@ -6112,7 +6125,7 @@ MonoBehaviour:
   m_FallbackScreenDPI: 96
   m_DefaultSpriteDPI: 96
   m_DynamicPixelsPerUnit: 1
-  m_PresetInfoIsWorld: 0
+  m_PresetInfoIsWorld: 1
 --- !u!223 &1856050127
 Canvas:
   m_ObjectHideFlags: 0
@@ -6122,8 +6135,8 @@ Canvas:
   m_GameObject: {fileID: 1856050124}
   m_Enabled: 1
   serializedVersion: 3
-  m_RenderMode: 0
-  m_Camera: {fileID: 0}
+  m_RenderMode: 2
+  m_Camera: {fileID: 1838783032}
   m_PlaneDistance: 100
   m_PixelPerfect: 0
   m_ReceivesEvents: 1
@@ -6145,7 +6158,7 @@ RectTransform:
   m_GameObject: {fileID: 1856050124}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 0.001, y: 0.003, z: 0.01}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1695980977}
@@ -6154,9 +6167,22 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 0}
-  m_Pivot: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 25.09, y: 5.33}
+  m_SizeDelta: {x: 1403, y: 691.5}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1856050129
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1856050124}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e124ec74d6af17d459ab341eae7cf737, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::SettingsPopupMenu
+  settingsPopup: {fileID: 1981457792}
 --- !u!1 &1936867487
 GameObject:
   m_ObjectHideFlags: 0
@@ -6262,14 +6288,14 @@ RectTransform:
   m_GameObject: {fileID: 1962918889}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1.66, z: 1}
+  m_LocalScale: {x: 6.98, y: 4.565, z: 2.75}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1981457793}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: -53.2}
+  m_AnchoredPosition: {x: 0, y: -83}
   m_SizeDelta: {x: 160, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1962918891
@@ -6315,7 +6341,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1962918892}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1856050129}
+        m_TargetAssemblyTypeName: SettingsPopupMenu, Assembly-CSharp
+        m_MethodName: ContinueGame
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1962918892
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6583,7 +6621,7 @@ RectTransform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
+  m_ConstrainProportionsScale: 1
   m_Children:
   - {fileID: 2067375038}
   - {fileID: 1962918890}
@@ -6607,7 +6645,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.Image
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 0.392}
+  m_Color: {r: 0, g: 0, b: 0, a: 0.392}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -6815,14 +6853,14 @@ RectTransform:
   m_GameObject: {fileID: 2067375037}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1.66, z: 1}
+  m_LocalScale: {x: 6.98, y: 4.565, z: 2.75}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1981457793}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0, y: 62.00005}
   m_SizeDelta: {x: 160, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2067375039
@@ -6868,7 +6906,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 2067375040}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1856050129}
+        m_TargetAssemblyTypeName: SettingsPopupMenu, Assembly-CSharp
+        m_MethodName: ExitGame
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &2067375040
 MonoBehaviour:
   m_ObjectHideFlags: 0
