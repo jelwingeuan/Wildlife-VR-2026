@@ -5410,7 +5410,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &1683890395
 RectTransform:
   m_ObjectHideFlags: 0
@@ -6205,7 +6205,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 62b949e86c1eb674484cf94b7335cb51, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::StandaloneLeftControllerTracker
-  trackingOrigin: {fileID: 0}
+  trackingOrigin: {fileID: 283067748}
 --- !u!1001 &1843614416
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -6530,6 +6530,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::SettingsPopupMenu
   settingsPopup: {fileID: 1981457792}
+  wasXPressed: 0
+  wasYPressed: 0
 --- !u!1 &1936867487
 GameObject:
   m_ObjectHideFlags: 0
@@ -7047,6 +7049,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::SimpleHandMenu
   handMenuCanvas: {fileID: 1683890394}
+  wasMenuPressed: 0
+  wasXPressed: 0
+  wasYPressed: 0
 --- !u!4 &1986305308
 Transform:
   m_ObjectHideFlags: 0
