@@ -19092,7 +19092,7 @@ MonoBehaviour:
   m_OriginBaseGameObject: {fileID: 1500751440}
   m_CameraFloorOffsetObject: {fileID: 141896235}
   m_RequestedTrackingOriginMode: 1
-  m_CameraYOffset: 1.7
+  m_CameraYOffset: 4
 --- !u!4 &1500751445
 Transform:
   m_ObjectHideFlags: 0
@@ -22276,7 +22276,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::ItemSwitcher
   seedLauncher: {fileID: 1045124638}
   waterCannon: {fileID: 2119009894}
-  rightHandTransform: {fileID: 0}
+  rightHandTransform: {fileID: 2059469312}
 --- !u!114 &1731947668
 MonoBehaviour:
   m_ObjectHideFlags: 0
