@@ -8713,7 +8713,7 @@ MonoBehaviour:
   animalVoiceClips:
   - {fileID: 8300000, guid: a00c1bbdb6a7c4d9da5174b7010c45f6, type: 3}
   - {fileID: 8300000, guid: b3e1c3d5b45d942b88d04151cc5ce39d, type: 3}
-  minimumDelay: 15
+  minimumDelay: 0
   maximumDelay: 35
   volume: 0.7
 --- !u!82 &716451747
